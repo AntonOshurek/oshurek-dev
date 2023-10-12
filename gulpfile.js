@@ -85,9 +85,8 @@ export const copyLightThemeStyles = () => {
       autoprefixer(),
       cssnano()
     ]))
-	.pipe(dest(paths.buildCssFolder))
+	.pipe(dest(buildFolder))
 	.pipe(browserSync.stream())
-    .pipe(gulp.dest(buildFolder));
 }
 
 export const copyDarkThemeStyles = () => {
@@ -99,9 +98,8 @@ export const copyDarkThemeStyles = () => {
       autoprefixer(),
       cssnano()
     ]))
-	.pipe(dest(paths.buildCssFolder))
+	.pipe(dest(buildFolder))
 	.pipe(browserSync.stream())
-    .pipe(gulp.dest(buildFolder));
 }
 
 //HTML
