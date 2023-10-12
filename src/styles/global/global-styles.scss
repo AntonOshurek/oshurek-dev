@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 
-	// font-family: 'PT Sans', 'Arial', sans-serif;
+	font-family: 'Heebo', 'Arial', sans-serif;
 }
 
 .visually-hidden {
@@ -14,20 +14,11 @@
 	clip: rect(0 0 0 0);
 }
 
-.body__wrap {
-	width: 100%;
-}
-
 .body {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin: 0;
 	padding: 0;
-
-	// font-family: "PT Sans", "Arial", sans-serif;
-	background-color: #FFFFFF;
-	gap: 10px;
+  background-color: #fff;
+  color: #000;
 
 	&--scrolloff {
 		overflow: hidden;

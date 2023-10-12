@@ -5,12 +5,12 @@
   "main": "index.js",
   "type": "module",
 	"scripts": {
+    "build": "gulp runBuild",
+		"start": "gulp runDev",
 		"test-markup": "gulp validateMarkup --silent && gulp lintBemMarkup",
-		"stylelint": "stylelint \"./src/styles/**/*.scss\" --custom-syntax postcss-scss",
-		"stylelint--fix": "stylelint \"./src/styles/**/*.scss\" --custom-syntax postcss-scss --fix",
-		"es-lint": "eslint src/**/*.js",
-		"build": "gulp runBuild",
-		"start": "gulp runDev"
+		"test-styles": "stylelint \"./src/styles/**/*.scss\" --custom-syntax postcss-scss",
+		"test-styles--fix": "stylelint \"./src/styles/**/*.scss\" --custom-syntax postcss-scss --fix",
+		"test-js": "eslint src/**/*.js"
 	},
 	"engines": {
 		"node": ">=18"
