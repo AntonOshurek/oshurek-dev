@@ -31,6 +31,8 @@ const srcFolder = "./src";
 const buildFolder = "./app";
 const paths = {
 	srcStyles: `${srcFolder}/styles/index.scss`,
+	srcDarkThemeStyle: `${srcFolder}/dark.scss`,
+	srcLightThemeStyle: `${srcFolder}/light.scss`,
 	srcSvg: `${srcFolder}/img/svg/**.svg`,
 	srcImgFolder: `${srcFolder}/images`,
 	srcFullJs: `${srcFolder}/scripts/**/*.js`,
@@ -73,6 +75,34 @@ export const styles = () => {
 		.pipe(dest(paths.buildCssFolder))
 		.pipe(browserSync.stream());
 };
+
+export const copyLightThemeStyles = () => {
+  return src(paths.srcLightThemeStyle)
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer(),
+      cssnano()
+    ]))
+	.pipe(dest(paths.buildCssFolder))
+	.pipe(browserSync.stream())
+    .pipe(gulp.dest(buildFolder));
+}
+
+export const copyDarkThemeStyles = () => {
+  return src(paths.srcDarkThemeStyle)
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer(),
+      cssnano()
+    ]))
+	.pipe(dest(paths.buildCssFolder))
+	.pipe(browserSync.stream())
+    .pipe(gulp.dest(buildFolder));
+}
 
 //HTML
 export const html = () => {
@@ -222,6 +252,8 @@ const watchFiles = () => {
 	watch([`${srcFolder}/styles/**/*.scss`], series(styles));
 	watch(`${srcFolder}/*.html`, series(html, reloadServer));
 	watch(`${srcFolder}/scripts/**/*.js`, series(scripts));
+	watch(`${srcFolder}/light.scss`, series(copyLightThemeStyles, reload));
+  	watch(`${srcFolder}/dark.scss`, series(copyDarkThemeStyles, reload));
 };
 
 const toProd = (done) => {
@@ -232,10 +264,10 @@ const toProd = (done) => {
 //SCRIPTS build and developer server
 export function runBuild(done) {
 	series(toProd, clean)(done);
-	parallel(htmlBuild, styles, scripts, copyImages, copy)(done);
+	parallel(htmlBuild, styles, copyLightThemeStyles, copyDarkThemeStyles, scripts, copyImages, copy)(done);
 }
 
 export function runDev(done) {
-	series(clean, copyImages, copy, html, styles, scripts)(done);
+	series(clean, copyImages, copy, html, styles, copyLightThemeStyles, copyDarkThemeStyles, scripts)(done);
 	series(startServer, watchFiles)(done);
 }
