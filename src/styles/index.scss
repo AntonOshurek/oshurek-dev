@@ -1,13 +1,13 @@
 @import './global/global-styles';
-@import './global/fonts.scss';
+@import './global/fonts';
 @import './variables/variables';
 
 /* global blocks */
-@import './global-blocks/body.scss';
-@import './global-blocks/footer.scss';
-@import './global-blocks/header.scss';
-@import './global-blocks/main.scss';
-@import './global-blocks/theme-switcher.scss';
+@import './global-blocks/body';
+@import './global-blocks/footer';
+@import './global-blocks/header';
+@import './global-blocks/main';
+@import './global-blocks/theme-switcher';
 
 /* blocks */
-@import './blocks/index.scss';
+@import './blocks/index';

@@ -1,11 +1,11 @@
 .header {
-	width: 100%;
 	padding: 30px var(--safe-side-paddings);
+	width: 100%;
 }
 
 .header__wrap {
 	display: flex;
-	justify-content: flex-end;
 	align-items: center;
-	gap: 20px;
+	justify-content: flex-end;
+	gap: 40px;
 }

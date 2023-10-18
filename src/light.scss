@@ -1,16 +1,22 @@
 :root {
 	/* main colors */
-	--bg: #ffffff;
-	--second-bg: #edf7fa;
-	--primary: #ff6464;
-	--primary-text: #21243d;
-	--secondary-text: #8695a4;
-	--white-text: #ffffff;
-	--link-text: #00a8cc;
-	--overlay: #142850;
+	--bg: #fdffff;
+	--second-bg: #ffffff;
 
-	--test-primary: #03dac6;
-	--test-secondary: #6200ee;
+	// --primary-text: #21243d;
+	// --secondary-text: #8695a4;
+	// --white-text: #ffffff;
+	// --link-text: #00a8cc;
+	// --overlay: #142850;
+
+	--primary: #03dac6;
+	--secondary: #6200ee;
+	--current-item-color: #ff6464;
+
+	/* test colors */
+	--navigation-link-color: #000000;
+	--navigation-link-hover-color: var(--secondary);
+	--navigation-link-active-color: var(--current-item-color);
 
 	/* shadows */
 	--shadow: 0.3rem 0.3rem 0.9rem #c8d0e7, -0.2rem -0.2rem 0.8rem #ffffff;

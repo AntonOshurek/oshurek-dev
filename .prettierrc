@@ -14,5 +14,6 @@
 			}
 		}
 	],
-	"ignore": ["**/node_modules/**"]
+	"ignore": ["**/node_modules/**"],
+	"htmlVoidElements": ["img", "meta", "img"]
 }

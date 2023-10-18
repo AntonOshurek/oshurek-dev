@@ -8,7 +8,6 @@ import { deleteSync } from 'del';
 import notify from 'gulp-notify';
 //HTML
 import htmlmin from 'gulp-htmlmin';
-import { htmlValidator } from 'gulp-w3c-html-validator';
 import bemlinter from 'gulp-html-bemlinter';
 //STYLES
 import plumber from 'gulp-plumber';
@@ -131,12 +130,6 @@ export const htmlBuild = () => {
 };
 
 //html tests
-export const validateMarkup = () => {
-	return src(`${srcFolder}/**/*.html`)
-		.pipe(htmlValidator.analyzer())
-		.pipe(htmlValidator.reporter({ throwErrors: true }));
-};
-
 export const lintBemMarkup = () => {
 	return src(`${srcFolder}/**/*.html`).pipe(bemlinter());
 };

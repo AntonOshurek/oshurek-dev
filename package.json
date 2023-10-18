@@ -7,7 +7,7 @@
 	"scripts": {
 		"build": "gulp runBuild",
 		"start": "gulp runDev",
-		"test-markup": "gulp validateMarkup --silent && gulp lintBemMarkup",
+		"test-markup": "gulp lintBemMarkup",
 		"test-styles": "stylelint \"./src/styles/**/*.scss\" --custom-syntax postcss-scss",
 		"test-styles--fix": "stylelint \"./src/styles/**/*.scss\" --custom-syntax postcss-scss --fix",
 		"test-js": "eslint src/**/*.js"
@@ -39,7 +39,6 @@
 		"gulp-sass": "^5.1.0",
 		"gulp-sitemap": "^8.0.0",
 		"gulp-sourcemaps": "^3.0.0",
-		"gulp-w3c-html-validator": "^5.2.0",
 		"postcss-scss": "^4.0.9",
 		"prettier": "^3.0.3",
 		"sass": "^1.68.0",

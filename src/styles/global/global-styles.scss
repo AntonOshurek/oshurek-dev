@@ -1,11 +1,10 @@
-@import '../variables/variables.scss';
+@import '../variables/variables';
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
-	font-family: 'Heebo', 'Arial', sans-serif;
+	font-family: Heebo, Arial, sans-serif;
 }
 
 .container {

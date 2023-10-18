@@ -1,28 +1,25 @@
 .theme-switcher {
-	width: 106px; /* padding 5px + (32px icon size * 3 icons) */
 	position: relative;
-	margin: 0;
-	padding: 5px;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
 	border: none;
-
-	&:hover {
-		box-shadow: var(--inner-shadow);
-	}
+	padding: 5px;
+	width: 106px; /* padding 5px + (32px icon size * 3 icons) */
 }
+
 /* Switcher Radio */
 .theme-switcher__radio {
-	cursor: pointer;
-	-webkit-appearance: none;
+	appearance: none;
 	appearance: none;
 	margin: 0;
 	width: 32px;
 	height: 32px;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: 24px;
+	background-repeat: no-repeat;
 	transition: filter 0.1s ease-in;
+	cursor: pointer;
 
 	&:focus {
 		outline: none;
@@ -44,15 +41,15 @@
 /* Switcher Status */
 .theme-switcher__status {
 	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
 	z-index: -1;
-	background-repeat: no-repeat;
 	background-image: url('../images/icons/status.svg');
-	background-size: 30px;
 	background-position: center;
+	background-size: 30px;
+	background-repeat: no-repeat;
 	transition: background-position 0.1s ease-in;
 }
 
