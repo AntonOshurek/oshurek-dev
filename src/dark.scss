@@ -1,65 +1,41 @@
 :root {
-  //main/basic colors
-  --main-color: #f73859;
-  --back-color: #2E3237;
-  --standart-text-color: #EFEFEF;
-  --sub-text-color: #888686;
-  //menu
-  --menu-item-hover-color: rgba(229,231,235,0.3);
-  --menu-mobile-overlay-color: rgba(35, 41, 49, 0.9);
-  //inner data block
-  --inner-data-n1-color: #ddf6df;
-  --inner-data-n2-color: #e9e7fd;
-  --inner-data-n3-color: #fee4cb;
-  --inner-data-n4-color: #ffd3e2;
-  --inner-data-n5-color: #c8f7dc;
-  --inner-data-n6-color: #d5deff;
-  //scrollBar colors
-  --scrollbar-thumb-color: #888686;
-  --scrollbar-hover-color: #555;
-  //TABLE COLORS
-  --main-table-shadow: 9px 9px 16px rgba(000, 000, 000, 0.4),
-  -9px -9px 16px rgba(191, 191, 191, 0.1);
-  --main-table-head-shadow: .2rem .2rem .12rem #000000,
-  -.2rem -.2rem .5rem	#404040;
+	/* main colors */
+	--bg: #0e0e0e;
+	--second-bg: #0b0f15;
 
+	--primary-text: #efefef;
+	--white-text: #ffffff;
+	--dark-text: #000000;
+	// --secondary-text: #8695a4;
+	// --link-text: #00a8cc;
+	// --overlay: #122840;
 
-  --dropdown-crumbs-shadow: 6px 6px 14px 4px rgb(0 0 0 / 80%),
-  -4px -4px 10px rgb(255 255 255 / 30%);
+	--primary: #03dac6;
+	--secondary: #6200ee;
+	--attention: #ff6464;
 
-  --shadow: .3rem .3rem .8rem rgb(0 0 0 / 51%),
-  -.3rem -.3rem .8rem rgb(255 255 255 / 5%);
-  --inner-shadow: inset .2rem .2rem .5rem rgb(0 0 0 / 51%),
-  inset -.2rem -.2rem .5rem rgb(255 255 255 / 5%);
+	--important-item-color: var(--attention);
+	--hover-item-color: var(--primary);
+	--current-item-color: var(--attention);
 
-  //BUTTONS SHADOWS
-  --button-shadow: 3px 3px 5px #020202, -3px -3px 5px #23252d, -3px -3px 3px #23252d;
-  --button-inner-shadow: inset .2rem .2rem .5rem rgb(0 0 0 / 40%),
-  inset -.2rem -.2rem .5rem rgb(255 255 255 / 15%);
-  //INPUTS SHADOW
-  --colored-inner-shadow: inset 0.2rem 0.2rem 0.5rem rgb(195 193 198 / 90%),
-  inset -0.2rem -0.2rem 0.5rem #fff;
-  --colored-shadow: 0.3rem 0.3rem 0.5rem rgb(195 193 198 / 90%),
-  -0.2rem -0.2rem 0.4rem #fff;
-  //NOTIFICATION SHADOW
-  --notification-shadow: 10px 10px 15px rgb(195 193 198 / 50%),
-  -4px -4px 20px #fff;
+	/* test colors */
+	--navigation-link-color: var(--white-text);
 
-
-  --data-list-color: #404957;
-  --crumbs-arrow-color: #7D8597;
+	--shadow: 0.3rem 0.3rem 0.8rem rgb(0 0 0 / 51%), -0.3rem -0.3rem 0.8rem rgb(255 255 255 / 5%);
+	--inner-shadow: inset 0.2rem 0.2rem 0.5rem rgb(0 0 0 / 51%),
+		inset -0.2rem -0.2rem 0.5rem rgb(255 255 255 / 5%);
 }
 
 /* Switcher */
 
 .theme-switcher__radio {
-  filter: invert(1);
+	filter: invert(1);
 }
 
 .theme-switcher__radio:checked {
-  filter: invert(0);
+	filter: invert(0);
 }
 
 .theme-switcher__status {
-  filter: invert(1);
+	filter: invert(1);
 }

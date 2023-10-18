@@ -1,0 +1,69 @@
+.theme-switcher {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
+	border: none;
+	padding: 5px;
+	width: 106px; /* padding 5px + (32px icon size * 3 icons) */
+}
+
+/* Switcher Radio */
+.theme-switcher__radio {
+	appearance: none;
+	margin: 0;
+	width: 32px;
+	height: 32px;
+	background-position: center;
+	background-size: 24px;
+	background-repeat: no-repeat;
+	transition: filter 0.1s ease-in;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+
+	&--light {
+		background-image: url('../images/icons/light.svg');
+	}
+
+	&--auto {
+		background-image: url('../images/icons/auto.svg');
+	}
+
+	&--dark {
+		background-image: url('../images/icons/dark.svg');
+	}
+}
+
+/* Switcher Status */
+.theme-switcher__status {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	background-image: url('../images/icons/status.svg');
+	background-position: center;
+	background-size: 30px;
+	background-repeat: no-repeat;
+	transition: background-position 0.1s ease-in;
+}
+
+.theme-switcher__radio:focus-visible ~ .theme-switcher__status {
+	box-shadow: 0 0 0 2px black;
+}
+
+.theme-switcher__radio--light:checked ~ .theme-switcher__status {
+	background-position: left 6px center;
+}
+
+.theme-switcher__radio--auto:checked ~ .theme-switcher__status {
+	background-position: center center;
+}
+
+.theme-switcher__radio--dark:checked ~ .theme-switcher__status {
+	background-position: right 6px center;
+}

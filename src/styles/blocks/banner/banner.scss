@@ -1,0 +1,57 @@
+.banner {
+	display: grid;
+	grid-column-gap: 100px;
+	grid-row-gap: 40px;
+	grid-template-areas:
+		'title avatar'
+		'info avatar'
+		'button avatar';
+	grid-template-columns: 1fr 300px;
+	grid-template-rows: repeat(3, min-content);
+}
+
+.banner__title {
+	grid-area: title;
+	font-family: var(--basic-font);
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 60px;
+	color: var(--primary-text);
+}
+
+.banner__info {
+	grid-area: info;
+	font-family: var(--basic-font);
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--primary-text);
+}
+
+.banner__download-resume {
+	grid-area: button;
+	border: none;
+	border-radius: 2px;
+	padding: 5px 17px;
+	width: max-content;
+	font-family: var(--basic-font);
+	font-weight: 500;
+	font-size: 20px;
+	text-transform: capitalize;
+	color: var(--white-text);
+	background-color: var(--important-item-color);
+	cursor: pointer;
+	transition: all 0.1s ease;
+
+	&:hover {
+		background-color: var(--hover-item-color);
+	}
+}
+
+.banner__avatar {
+	grid-area: avatar;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	box-shadow: var(--shadow);
+	object-fit: cover;
+}

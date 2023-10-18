@@ -1,0 +1,32 @@
+.nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	gap: 30px;
+}
+
+.nav-list__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-list__link {
+	font-family: var(--basic-font);
+	font-weight: var(--nav-link-weight);
+	font-size: var(--nav-link-size);
+	text-decoration: none;
+	text-transform: capitalize;
+	color: var(--navigation-link-color);
+	cursor: pointer;
+
+	&:hover {
+		color: var(--hover-item-color);
+	}
+
+	&--active {
+		color: var(--current-item-color);
+		pointer-events: none;
+	}
+}

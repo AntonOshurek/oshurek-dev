@@ -1,0 +1,11 @@
+.main {
+	padding: 80px var(--safe-side-paddings);
+	width: 100%;
+}
+
+.main__wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+}
