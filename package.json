@@ -1,11 +1,11 @@
 {
-  "name": "oshurek-dev",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
+	"name": "oshurek-dev",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
 	"scripts": {
-    "build": "gulp runBuild",
+		"build": "gulp runBuild",
 		"start": "gulp runDev",
 		"test-markup": "gulp validateMarkup --silent && gulp lintBemMarkup",
 		"test-styles": "stylelint \"./src/styles/**/*.scss\" --custom-syntax postcss-scss",
@@ -15,9 +15,9 @@
 	"engines": {
 		"node": ">=18"
 	},
-  "author": "Anton Oshurek",
-  "license": "ISC",
-  	"devDependencies": {
+	"author": "Anton Oshurek",
+	"license": "ISC",
+	"devDependencies": {
 		"@babel/core": "^7.23.0",
 		"@babel/preset-env": "^7.22.20",
 		"autoprefixer": "^10.4.16",
@@ -41,6 +41,7 @@
 		"gulp-sourcemaps": "^3.0.0",
 		"gulp-w3c-html-validator": "^5.2.0",
 		"postcss-scss": "^4.0.9",
+		"prettier": "^3.0.3",
 		"sass": "^1.68.0",
 		"stylelint": "^15.10.3",
 		"stylelint-config-standard-scss": "^11.0.0",

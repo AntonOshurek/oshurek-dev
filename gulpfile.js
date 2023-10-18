@@ -1,34 +1,34 @@
-import gulp from "gulp";
+import gulp from 'gulp';
 //SERVER
-import browserSync from "browser-sync";
+import browserSync from 'browser-sync';
 //UTILS
-import rename from "gulp-rename";
+import rename from 'gulp-rename';
 // import del from 'del';
-import { deleteSync } from "del";
-import notify from "gulp-notify";
+import { deleteSync } from 'del';
+import notify from 'gulp-notify';
 //HTML
-import htmlmin from "gulp-htmlmin";
-import { htmlValidator } from "gulp-w3c-html-validator";
-import bemlinter from "gulp-html-bemlinter";
+import htmlmin from 'gulp-htmlmin';
+import { htmlValidator } from 'gulp-w3c-html-validator';
+import bemlinter from 'gulp-html-bemlinter';
 //STYLES
-import plumber from "gulp-plumber";
-import sourcemap from "gulp-sourcemaps";
-import postcss from "gulp-postcss"; /* for run all tasks */
+import plumber from 'gulp-plumber';
+import sourcemap from 'gulp-sourcemaps';
+import postcss from 'gulp-postcss'; /* for run all tasks */
 import cssnano from 'cssnano'; /* minify css */
-import dartSass from "sass";
-import gulpSass from "gulp-sass";
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
-import autoprefixer from "autoprefixer";
+import autoprefixer from 'autoprefixer';
 //JAVASCRIPT
-import webpackStream from "webpack-stream";
+import webpackStream from 'webpack-stream';
 //OPTIMIZE UTILS
-import sitemap from "gulp-sitemap";
+import sitemap from 'gulp-sitemap';
 
 const { src, dest, series, watch, parallel } = gulp;
 
 // paths
-const srcFolder = "./src";
-const buildFolder = "./app";
+const srcFolder = './src';
+const buildFolder = './app';
 const paths = {
 	srcStyles: `${srcFolder}/styles/index.scss`,
 	srcDarkThemeStyle: `${srcFolder}/dark.scss`,
@@ -53,10 +53,10 @@ export const styles = () => {
 		.pipe(
 			plumber(
 				notify.onError({
-					title: "SCSS",
-					message: "Error: <%= error.message %>",
-				})
-			)
+					title: 'SCSS',
+					message: 'Error: <%= error.message %>',
+				}),
+			),
 		)
 		.pipe(sourcemap.init())
 		.pipe(sass())
@@ -65,53 +65,47 @@ export const styles = () => {
 				autoprefixer({
 					cascade: false,
 					grid: true,
-					overrideBrowserslist: ["last 20 versions"],
+					overrideBrowserslist: ['last 20 versions'],
 				}),
-				cssnano()
-			])
+				cssnano(),
+			]),
 		)
-		.pipe(rename("style.min.css"))
-		.pipe(sourcemap.write("."))
+		.pipe(rename('style.min.css'))
+		.pipe(sourcemap.write('.'))
 		.pipe(dest(paths.buildCssFolder))
 		.pipe(browserSync.stream());
 };
 
 export const copyLightThemeStyles = () => {
-  return src(paths.srcLightThemeStyle)
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer(),
-      cssnano()
-    ]))
-	.pipe(dest(buildFolder))
-	.pipe(browserSync.stream())
-}
+	return src(paths.srcLightThemeStyle)
+		.pipe(plumber())
+		.pipe(sourcemap.init())
+		.pipe(sass())
+		.pipe(postcss([autoprefixer(), cssnano()]))
+		.pipe(dest(buildFolder))
+		.pipe(browserSync.stream());
+};
 
 export const copyDarkThemeStyles = () => {
-  return src(paths.srcDarkThemeStyle)
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer(),
-      cssnano()
-    ]))
-	.pipe(dest(buildFolder))
-	.pipe(browserSync.stream())
-}
+	return src(paths.srcDarkThemeStyle)
+		.pipe(plumber())
+		.pipe(sourcemap.init())
+		.pipe(sass())
+		.pipe(postcss([autoprefixer(), cssnano()]))
+		.pipe(dest(buildFolder))
+		.pipe(browserSync.stream());
+};
 
 //HTML
 export const html = () => {
 	return src([`${srcFolder}/**/*.html`])
 		.pipe(htmlmin({ collapseWhitespace: true }))
 		.pipe(dest(buildFolder))
-		.pipe(gulp.dest("./app"))
+		.pipe(gulp.dest('./app'))
 		.pipe(browserSync.stream());
 };
 
-const siteAddress = "https://www.example.com/";
+const siteAddress = 'https://www.example.com/';
 export const htmlBuild = () => {
 	return src([`${srcFolder}/**/*.html`])
 		.pipe(htmlmin({ collapseWhitespace: true }))
@@ -119,7 +113,7 @@ export const htmlBuild = () => {
 		.pipe(
 			sitemap({
 				siteUrl: siteAddress,
-				changefreq: "monthly",
+				changefreq: 'monthly',
 				priority: function (siteUrl, loc, entry) {
 					const prior = () => {
 						if (loc.toString() === siteAddress) {
@@ -130,9 +124,9 @@ export const htmlBuild = () => {
 					};
 					return prior();
 				},
-			})
+			}),
 		)
-		.pipe(gulp.dest("./app"))
+		.pipe(gulp.dest('./app'))
 		.pipe(browserSync.stream());
 };
 
@@ -153,35 +147,35 @@ const scripts = () => {
 		.pipe(
 			plumber(
 				notify.onError({
-					title: "JS",
-					message: "Error: <%= error.message %>",
-				})
-			)
+					title: 'JS',
+					message: 'Error: <%= error.message %>',
+				}),
+			),
 		)
 		.pipe(
 			webpackStream({
-				mode: isProd ? "production" : "development",
+				mode: isProd ? 'production' : 'development',
 				output: {
-					filename: "bundle.js",
+					filename: 'bundle.js',
 				},
 				watch: false,
-				devtool: "source-map",
+				devtool: 'source-map',
 				module: {
 					rules: [
 						{
 							test: /\.m?js$/,
 							exclude: /(node_modules|bower_components)/,
 							use: {
-								loader: "babel-loader",
+								loader: 'babel-loader',
 								options: {
 									presets: [
 										[
-											"@babel/preset-env",
+											'@babel/preset-env',
 											{
-												targets: "> 0.25%, not dead",
+												targets: '> 0.25%, not dead',
 												debug: true,
 												corejs: 3,
-												useBuiltIns: "usage",
+												useBuiltIns: 'usage',
 											},
 										],
 									],
@@ -190,11 +184,11 @@ const scripts = () => {
 						},
 					],
 				},
-			})
+			}),
 		)
-		.on("error", function (err) {
-			console.error("WEBPACK ERROR", err);
-			this.emit("end");
+		.on('error', function (err) {
+			console.error('WEBPACK ERROR', err);
+			this.emit('end');
 		})
 		.pipe(dest(paths.buildJsFolder))
 		.pipe(browserSync.stream());
@@ -203,9 +197,7 @@ const scripts = () => {
 //IMAGES
 //copyimg
 export const copyImages = () => {
-	return src(`${paths.srcImgFolder}/**/*.{png,jpg,svg,webp}`).pipe(
-		dest(`${paths.buildImgFolder}`)
-	);
+	return src(`${paths.srcImgFolder}/**/*.{png,jpg,svg,webp}`).pipe(dest(`${paths.buildImgFolder}`));
 };
 
 // Copy
@@ -218,7 +210,7 @@ export const copy = (done) => {
 		],
 		{
 			base: srcFolder,
-		}
+		},
 	).pipe(dest(buildFolder));
 	done();
 };
@@ -251,7 +243,7 @@ const watchFiles = () => {
 	watch(`${srcFolder}/*.html`, series(html, reloadServer));
 	watch(`${srcFolder}/scripts/**/*.js`, series(scripts));
 	watch(`${srcFolder}/light.scss`, series(copyLightThemeStyles));
-  watch(`${srcFolder}/dark.scss`, series(copyDarkThemeStyles));
+	watch(`${srcFolder}/dark.scss`, series(copyDarkThemeStyles));
 };
 
 const toProd = (done) => {
@@ -262,10 +254,27 @@ const toProd = (done) => {
 //SCRIPTS build and developer server
 export function runBuild(done) {
 	series(toProd, clean)(done);
-	parallel(htmlBuild, styles, copyLightThemeStyles, copyDarkThemeStyles, scripts, copyImages, copy)(done);
+	parallel(
+		htmlBuild,
+		styles,
+		copyLightThemeStyles,
+		copyDarkThemeStyles,
+		scripts,
+		copyImages,
+		copy,
+	)(done);
 }
 
 export function runDev(done) {
-	series(clean, copyImages, copy, html, styles, copyLightThemeStyles, copyDarkThemeStyles, scripts)(done);
+	series(
+		clean,
+		copyImages,
+		copy,
+		html,
+		styles,
+		copyLightThemeStyles,
+		copyDarkThemeStyles,
+		scripts,
+	)(done);
 	series(startServer, watchFiles)(done);
 }
