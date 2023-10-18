@@ -1,2 +1,53 @@
 .banner {
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	grid-template-rows: repeat(3, min-content);
+	grid-template-areas:
+		'title avatar'
+		'info avatar'
+		'button avatar';
+	grid-column-gap: 100px;
+}
+
+.banner__title {
+	font-family: var(--basic-font);
+	grid-area: title;
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 60px;
+	color: var(--primary-text);
+}
+.banner__info {
+	font-family: var(--basic-font);
+	grid-area: info;
+	color: var(--primary-text);
+	font-size: 16px;
+	font-weight: 400;
+}
+.banner__download-resume {
+	font-family: var(--basic-font);
+	grid-area: button;
+	color: var(--white-text);
+	padding: 5px 17px;
+	width: max-content;
+	text-transform: capitalize;
+	background-color: var(--important-item-color);
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+
+	font-size: 20px;
+	font-weight: 500;
+
+	&:hover {
+		background-color: var(--hover-item-color);
+	}
+}
+.banner__avatar {
+	grid-area: avatar;
+	width: 250px;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 50%;
+	box-shadow: var(--shadow);
 }

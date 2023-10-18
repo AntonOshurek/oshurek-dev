@@ -12,6 +12,11 @@
 	max-width: $desctope-width;
 }
 
+.content-container {
+	margin: 0 auto;
+	max-width: $content-desctope-width;
+}
+
 .visually-hidden {
 	position: absolute;
 	overflow: hidden;

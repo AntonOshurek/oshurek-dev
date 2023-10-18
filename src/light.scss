@@ -4,21 +4,22 @@
 	--second-bg: #ffffff;
 
 	--primary-text: #21243d;
+	--white-text: #ffffff;
+	--dark-text: #000000;
 	// --secondary-text: #8695a4;
-	// --white-text: #ffffff;
 	// --link-text: #00a8cc;
 	// --overlay: #142850;
 
 	--primary: #03dac6;
 	--secondary: #6200ee;
-	--current-item-color: #ff6464;
+	--attention: #ff6464;
+
+	--important-item-color: var(--attention);
+	--hover-item-color: var(--secondary);
+	--current-item-color: var(--attention);
 
 	/* test colors */
-	--navigation-link-color: #000000;
-	--navigation-link-hover-color: var(--secondary);
-	--navigation-link-active-color: var(--current-item-color);
-
-	--footer-sosial-icon-hover: var(--secondary);
+	--navigation-link-color: var(--dark-text);
 
 	/* shadows */
 	--shadow: 0.3rem 0.3rem 0.9rem #c8d0e7, -0.2rem -0.2rem 0.8rem #ffffff;
