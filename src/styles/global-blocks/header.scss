@@ -1,0 +1,11 @@
+.header {
+	width: 100%;
+	padding: 30px var(--safe-side-paddings);
+}
+
+.header__wrap {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	gap: 20px;
+}

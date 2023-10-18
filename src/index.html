@@ -34,35 +34,56 @@
 	</head>
 
 	<body class="body">
-		<h1>Test Ti tle</h1>
-		<p>test</p>
+		<header class="header">
+			<div class="header__wrap container">
+				<nav class="nav">
+					<h2 class="visually-hidden">Page navigation</h2>
+					<ul class="nav-list">
+						<li class="nav-list__item">
+							<a class="nav-list__link" href="">Home</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link" href="">Works</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link" href="">Blog</a>
+						</li>
+						<li class="nav-list__item">
+							<a class="nav-list__link" href="">Contact</a>
+						</li>
+					</ul>
+				</nav>
 
-		<fieldset class="theme-switcher">
-			<legend class="visually-hidden">Цветовая тема</legend>
-			<input
-				class="theme-switcher__radio theme-switcher__radio--light"
-				type="radio"
-				name="color-scheme"
-				value="light"
-				aria-label="светлая тема"
-			/>
-			<input
-				class="theme-switcher__radio theme-switcher__radio--auto"
-				type="radio"
-				name="color-scheme"
-				value="auto"
-				aria-label="автоматическая тема"
-				checked
-			/>
-			<input
-				class="theme-switcher__radio theme-switcher__radio--dark"
-				type="radio"
-				name="color-scheme"
-				value="dark"
-				aria-label="тёмная тема"
-			/>
-			<div class="theme-switcher__status"></div>
-		</fieldset>
+				<fieldset class="theme-switcher">
+					<legend class="visually-hidden">Цветовая тема</legend>
+					<input
+						class="theme-switcher__radio theme-switcher__radio--light"
+						type="radio"
+						name="color-scheme"
+						value="light"
+						aria-label="светлая тема"
+					/>
+					<input
+						class="theme-switcher__radio theme-switcher__radio--auto"
+						type="radio"
+						name="color-scheme"
+						value="auto"
+						aria-label="автоматическая тема"
+						checked
+					/>
+					<input
+						class="theme-switcher__radio theme-switcher__radio--dark"
+						type="radio"
+						name="color-scheme"
+						value="dark"
+						aria-label="тёмная тема"
+					/>
+					<div class="theme-switcher__status"></div>
+				</fieldset>
+			</div>
+		</header>
+		<main class="main"></main>
+		<footer class="footer"></footer>
 
 		<script src="./scripts/bundle.js"></script>
 	</body>

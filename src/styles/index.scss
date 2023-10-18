@@ -2,5 +2,12 @@
 @import './global/fonts.scss';
 @import './variables/variables';
 
+/* global blocks */
+@import './global-blocks/body.scss';
+@import './global-blocks/footer.scss';
+@import './global-blocks/header.scss';
+@import './global-blocks/main.scss';
+@import './global-blocks/theme-switcher.scss';
+
 /* blocks */
-@import './blocks/theme-switcher.scss';
+@import './blocks/index.scss';

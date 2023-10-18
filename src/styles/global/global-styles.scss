@@ -1,3 +1,5 @@
+@import '../variables/variables.scss';
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,21 +8,15 @@
 	font-family: 'Heebo', 'Arial', sans-serif;
 }
 
+.container {
+	margin: 0 auto;
+	max-width: $desctope-width;
+}
+
 .visually-hidden {
 	position: absolute;
 	overflow: hidden;
 	width: 1px;
 	height: 1px;
 	clip: rect(0 0 0 0);
-}
-
-.body {
-	margin: 0;
-	padding: 0;
-	background-color: var(--bg);
-	color: var(--primary-text);
-
-	&--scrolloff {
-		overflow: hidden;
-	}
 }
