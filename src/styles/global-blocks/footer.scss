@@ -21,19 +21,30 @@
 }
 
 .footer__social-item {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	height: 30px;
+	width: 30px;
 }
 
 .footer__social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
 }
 
 .footer__copyright {
 	font-family: var(--basic-font);
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
+	font-size: var(--footer-copyright-size);
+	font-weight: var(--footer-copyright-weight);
 	color: var(--primary-text);
+}
+
+.footer__social-icon {
+	& path {
+		fill: var(--primary-text);
+	}
+
+	&:hover path {
+		fill: var(--footer-sosial-icon-hover);
+	}
 }
