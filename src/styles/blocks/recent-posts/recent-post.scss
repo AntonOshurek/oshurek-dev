@@ -1,15 +1,24 @@
 .recent-post {
+	box-shadow: var(--shadow);
+	background-color: var(--overlay);
+	padding: 24px;
+	border-radius: 4px;
 }
+
 .recent-post__title {
 }
+
 .recent-post__date {
 }
+
 .recent-post__tags {
 }
 
 .recent-post__tags-list {
 }
+
 .recent-post__tag {
 }
+
 .recent-post__overview {
 }

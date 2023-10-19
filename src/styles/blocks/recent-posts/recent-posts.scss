@@ -1,7 +1,7 @@
 .recent-posts {
 	width: 100%;
-	background-color: var(--overlay);
-	padding: 30px var(--safe-side-paddings);
+	background-color: var(--second-bg);
+	padding: 30px var(--safe-side-paddings) 40px var(--safe-side-paddings);
 }
 
 .recent-posts__wrap {
@@ -11,12 +11,35 @@
 	grid-template-areas:
 		'title link'
 		'post post';
+	gap: 20px;
 }
 
 .recent-posts__title {
 	grid-area: title;
+	align-self: center;
+	font-family: var(--basic-font);
+	color: var(--primary-text);
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 60px;
 }
+
 .recent-posts__all-posts-link {
 	grid-area: link;
 	justify-self: flex-end;
+	align-self: center;
+
+	color: var(--link-text);
+	font-family: var(--basic-font);
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.recent-posts__post {
+	// grid-area: post;
 }
