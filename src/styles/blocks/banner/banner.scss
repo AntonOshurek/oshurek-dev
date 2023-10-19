@@ -1,4 +1,8 @@
 .banner {
+	padding: 80px var(--safe-side-paddings);
+}
+
+.banner__wrap {
 	display: grid;
 	grid-column-gap: 100px;
 	grid-row-gap: 40px;
@@ -13,8 +17,8 @@
 .banner__title {
 	grid-area: title;
 	font-family: var(--basic-font);
-	font-weight: 700;
-	font-size: 44px;
+	font-weight: var(--xxl-title-weight);
+	font-size: var(--xxl-title-size);
 	line-height: 60px;
 	color: var(--primary-text);
 }
@@ -22,8 +26,8 @@
 .banner__info {
 	grid-area: info;
 	font-family: var(--basic-font);
-	font-weight: 400;
-	font-size: 16px;
+	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
 	color: var(--primary-text);
 }
 
@@ -34,8 +38,8 @@
 	padding: 5px 17px;
 	width: max-content;
 	font-family: var(--basic-font);
-	font-weight: 500;
-	font-size: 20px;
+	font-weight: var(--l-fat-text-weight);
+	font-size: var(--l-fat-text-size);
 	text-transform: capitalize;
 	color: var(--white-text);
 	background-color: var(--important-item-color);
