@@ -16,10 +16,19 @@
 
 .recent-post__title {
 	grid-area: title;
+	font-family: var(--basic-font);
+	color: var(--primary-text);
+	font-size: 26px;
+	font-weight: 700;
+	line-height: normal;
 }
 
 .recent-post__date {
 	grid-area: time;
+	font-family: var(--basic-font);
+	color: var(--primary-text);
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .recent-post__tags {
@@ -27,11 +36,34 @@
 }
 
 .recent-post__tags-list {
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
 }
 
 .recent-post__tag {
+	position: relative;
+	font-family: var(--basic-font);
+	color: var(--primary-text);
+	font-size: 18px;
+	font-weight: 400;
+
+	&:not(:last-child)::after {
+		content: ',';
+		position: absolute;
+		width: max-content;
+		height: max-content;
+		right: -5px;
+		bottom: 0;
+	}
 }
 
 .recent-post__overview {
 	grid-area: overview;
+	font-family: var(--basic-font);
+	color: var(--primary-text);
+	font-size: 16px;
+	font-weight: 400;
 }
