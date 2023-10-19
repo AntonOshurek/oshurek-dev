@@ -3,15 +3,27 @@
 	background-color: var(--overlay);
 	padding: 24px;
 	border-radius: 4px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: min-content min-content 1fr;
+	grid-template-areas:
+		'title title'
+		'time tags'
+		'overview overview';
+	gap: 17px;
 }
 
 .recent-post__title {
+	grid-area: title;
 }
 
 .recent-post__date {
+	grid-area: time;
 }
 
 .recent-post__tags {
+	grid-area: tags;
 }
 
 .recent-post__tags-list {
@@ -21,4 +33,5 @@
 }
 
 .recent-post__overview {
+	grid-area: overview;
 }
