@@ -1,0 +1,22 @@
+.recent-posts {
+	width: 100%;
+	background-color: var(--overlay);
+	padding: 30px var(--safe-side-paddings);
+}
+
+.recent-posts__wrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: min-content 1fr;
+	grid-template-areas:
+		'title link'
+		'post post';
+}
+
+.recent-posts__title {
+	grid-area: title;
+}
+.recent-posts__all-posts-link {
+	grid-area: link;
+	justify-self: flex-end;
+}
