@@ -1,3 +1,5 @@
+@import '../../variables/variables.scss';
+
 .recent-posts {
 	width: 100%;
 	background-color: var(--second-bg);
@@ -10,7 +12,7 @@
 	grid-template-rows: min-content 1fr;
 	grid-template-areas:
 		'title link'
-		'post post';
+		'postslist postslist';
 	gap: 20px;
 }
 
@@ -37,4 +39,19 @@
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+.recent-posts__list {
+	grid-area: postslist;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+
+	@media (max-width: $tablet-width) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.recent-posts__item {
+	list-style: none;
 }

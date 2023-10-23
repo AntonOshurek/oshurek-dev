@@ -1,3 +1,5 @@
+@import '../../variables/variables.scss';
+
 .featured-works-list {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -19,7 +21,7 @@
 		background-color: var(--decor-color);
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: $mobile-width) {
 		max-width: 350px;
 	}
 }
@@ -36,7 +38,7 @@
 	grid-column-gap: 18px;
 	align-items: center;
 
-	@media (max-width: 800px) {
+	@media (max-width: $mobile-width) {
 		grid-template-columns: max-content 1fr;
 		grid-template-rows: min-content min-content min-content 1fr;
 		grid-template-areas:
