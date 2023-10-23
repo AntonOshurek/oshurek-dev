@@ -5,9 +5,14 @@
 }
 
 .featured-works__wrap {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 20px;
 }
 
 .featured-works__title {
 	font-family: var(--basic-font);
 	color: var(--primary-text);
+	font-size: var(--s-title-size);
+	font-weight: var(--s-title-weight);
 }

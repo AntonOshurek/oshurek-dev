@@ -6,7 +6,18 @@
 }
 
 .featured-works-list__item {
+	position: relative;
 	list-style: none;
+
+	&:not(:last-child)::after {
+		position: absolute;
+		content: '';
+		bottom: -15px;
+		left: 0;
+		height: 1px;
+		width: 100%;
+		background-color: var(--decor-color);
+	}
 
 	@media (max-width: 800px) {
 		max-width: 350px;
@@ -26,7 +37,7 @@
 	align-items: center;
 
 	@media (max-width: 800px) {
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: max-content 1fr;
 		grid-template-rows: min-content min-content min-content 1fr;
 		grid-template-areas:
 			'img img'
@@ -53,7 +64,7 @@
 	font-weight: 900;
 	background-color: var(--surface);
 	color: var(--white-text);
-	padding: 5px 10px;
+	padding: 0 10px;
 	border-radius: 16px;
 }
 
