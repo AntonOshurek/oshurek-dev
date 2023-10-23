@@ -1,26 +1,32 @@
 :root {
-	/* main colors */
+	/* BG and Overlays */
 	--bg: #f6f6f8;
 	--second-bg: #edf7fa;
 	--overlay: #ffffff;
+	--surface: #142850;
 
+	/* Text colors */
 	--primary-text: #21243d;
 	--white-text: #ffffff;
 	--dark-text: #000000;
 	--link-text: #00a8cc;
-	// --secondary-text: #8695a4;
-	// --overlay: #142850;
+	--secondary-text: #8695a4;
 
+	/* Other */
+	--decor-color: #e0e0e0;
+
+	/* main */
 	--primary: #03dac6;
 	--secondary: #6200ee;
 	--attention: #ff6464;
 
+	/* items */
+	--navigation-link-color: var(--dark-text);
+
+	/* some items */
 	--important-item-color: var(--attention);
 	--hover-item-color: var(--secondary);
 	--current-item-color: var(--attention);
-
-	/* test colors */
-	--navigation-link-color: var(--dark-text);
 
 	/* shadows */
 	--shadow: 0.3rem 0.3rem 0.9rem #c8d0e7, -0.2rem -0.2rem 0.8rem #ffffff;

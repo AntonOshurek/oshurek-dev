@@ -1,40 +1,56 @@
+@import '../../variables/variables';
+
 .recent-posts {
+	padding: 30px var(--safe-side-paddings) 40px var(--safe-side-paddings);
 	width: 100%;
 	background-color: var(--second-bg);
-	padding: 30px var(--safe-side-paddings) 40px var(--safe-side-paddings);
 }
 
 .recent-posts__wrap {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: min-content 1fr;
 	grid-template-areas:
 		'title link'
-		'post post';
+		'postslist postslist';
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: min-content 1fr;
 	gap: 20px;
 }
 
 .recent-posts__title {
-	grid-area: title;
 	align-self: center;
+	grid-area: title;
 	font-family: var(--basic-font);
-	color: var(--primary-text);
-	font-size: var(--s-title-size);
 	font-weight: var(--s-title-weight);
+	font-size: var(--s-title-size);
+	color: var(--primary-text);
 }
 
 .recent-posts__all-posts-link {
-	grid-area: link;
-	justify-self: flex-end;
 	align-self: center;
-
-	color: var(--link-text);
+	justify-self: flex-end;
+	grid-area: link;
 	font-family: var(--basic-font);
-	font-size: var(--s-text-size);
 	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
 	text-decoration: none;
+	color: var(--link-text);
 
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+.recent-posts__list {
+	display: grid;
+	grid-area: postslist;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+
+	@media (max-width: $tablet-width) {
+		grid-template-columns: 1fr;
+	}
+}
+
+.recent-posts__item {
+	list-style: none;
 }
