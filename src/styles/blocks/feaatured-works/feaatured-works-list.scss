@@ -1,0 +1,30 @@
+.featured-works-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-row-gap: 30px;
+}
+
+.featured-works-list__item {
+	list-style: none;
+}
+
+.featured-works-list__article {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: min-content 1fr;
+	grid-template-areas:
+		'title link'
+		'post post';
+	gap: 20px;
+}
+
+.featured-works-list__title {
+}
+.featured-works-list__date {
+}
+.featured-works-list__subtitle {
+}
+.featured-works-list__description {
+}
+.featured-works-list__image {
+}
