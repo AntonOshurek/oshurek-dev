@@ -1,10 +1,10 @@
-@import '../../variables/variables.scss';
+@import '../../variables/variables';
 
 .featured-works-list {
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-row-gap: 30px;
 	justify-items: center;
+	grid-row-gap: 30px;
+	grid-template-columns: 1fr;
 }
 
 .featured-works-list__item {
@@ -12,12 +12,12 @@
 	list-style: none;
 
 	&:not(:last-child)::after {
-		position: absolute;
 		content: '';
-		bottom: -15px;
+		position: absolute;
 		left: 0;
-		height: 1px;
+		bottom: -15px;
 		width: 100%;
+		height: 1px;
 		background-color: var(--decor-color);
 	}
 
@@ -28,62 +28,62 @@
 
 .featured-works-list__article {
 	display: grid;
-	grid-template-columns: minmax(150px, 250px) min-content 1fr;
-	grid-template-rows: min-content min-content 1fr;
+	align-items: center;
+	grid-column-gap: 18px;
+	grid-row-gap: 20px;
 	grid-template-areas:
 		'img title title'
 		'img date subtitle'
 		'img description description';
-	grid-row-gap: 20px;
-	grid-column-gap: 18px;
-	align-items: center;
+	grid-template-columns: minmax(150px, 250px) min-content 1fr;
+	grid-template-rows: min-content min-content 1fr;
 
 	@media (max-width: $mobile-width) {
-		grid-template-columns: max-content 1fr;
-		grid-template-rows: min-content min-content min-content 1fr;
+		grid-column-gap: 18px;
+		grid-row-gap: 17px;
 		grid-template-areas:
 			'img img'
 			'title title'
 			'date subtitle'
 			'description description';
-		grid-row-gap: 17px;
-		grid-column-gap: 18px;
+		grid-template-columns: max-content 1fr;
+		grid-template-rows: min-content min-content min-content 1fr;
 	}
 }
 
 .featured-works-list__title {
 	grid-area: title;
-	font-size: var(--l-title-size);
-	font-weight: var(--l-title-weight);
 	font-family: var(--basic-font);
+	font-weight: var(--l-title-weight);
+	font-size: var(--l-title-size);
 	color: var(--primary-text);
 }
 
 .featured-works-list__date {
 	grid-area: date;
-	font-family: var(--basic-font);
-	font-size: 18px;
-	font-weight: 900;
-	background-color: var(--surface);
-	color: var(--white-text);
-	padding: 0 10px;
 	border-radius: 16px;
+	padding: 0 10px;
+	font-family: var(--basic-font);
+	font-weight: 900;
+	font-size: 18px;
+	color: var(--white-text);
+	background-color: var(--surface);
 }
 
 .featured-works-list__subtitle {
 	grid-area: subtitle;
 	font-family: var(--basic-font);
-	color: var(--secondary-text);
-	font-size: var(--l-text-size);
 	font-weight: var(--l-text-weight);
+	font-size: var(--l-text-size);
+	color: var(--secondary-text);
 }
 
 .featured-works-list__description {
 	grid-area: description;
 	font-family: var(--basic-font);
-	color: var(--primary-text);
-	font-size: var(--s-text-size);
 	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
+	color: var(--primary-text);
 }
 
 .featured-works-list__image {

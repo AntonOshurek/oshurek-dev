@@ -1,18 +1,18 @@
 .featured-works {
+	padding: 30px var(--safe-side-paddings);
 	width: 100%;
 	background-color: var(--bg);
-	padding: 30px var(--safe-side-paddings);
 }
 
 .featured-works__wrap {
 	display: grid;
-	grid-template-columns: 1fr;
 	grid-row-gap: 20px;
+	grid-template-columns: 1fr;
 }
 
 .featured-works__title {
 	font-family: var(--basic-font);
-	color: var(--primary-text);
-	font-size: var(--s-title-size);
 	font-weight: var(--s-title-weight);
+	font-size: var(--s-title-size);
+	color: var(--primary-text);
 }
