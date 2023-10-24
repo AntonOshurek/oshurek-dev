@@ -28,14 +28,14 @@ const mobileMenu = () => {
   };
   function openMobileMenu() {
     navigation.classList.add('nav--open');
-    body.classList.add('body--menu-open');
+    body.classList.add('body--nav-open');
     mobileBtnIcon.classList.add('nav-button__burger--active');
     menuStatus = true;
     body.addEventListener('click', onBackgroundClick);
   }
   function closeMobileMenu() {
     navigation.classList.remove('nav--open');
-    body.classList.remove('body--menu-open');
+    body.classList.remove('body--nav-open');
     mobileBtnIcon.classList.remove('nav-button__burger--active');
     menuStatus = false;
     body.removeEventListener('click', onBackgroundClick);

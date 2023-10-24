@@ -1,5 +1,7 @@
+@import '../variables/variables.scss';
+
 .theme-switcher {
-	z-index: 3;
+	z-index: $z-index-theme-switcher;
 	position: relative;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;

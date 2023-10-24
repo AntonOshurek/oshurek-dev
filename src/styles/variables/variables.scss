@@ -3,6 +3,11 @@ $tablet-width: 800px;
 $mobile-width: 600px;
 $content-desctope-width: 1000px;
 
+/* Z indexes */
+$z-index-body-nav-open: 1;
+$z-index-header: 2;
+$z-index-theme-switcher: 3;
+
 :root {
 	/* sizes variables */
 	--safe-side-paddings: 20px;

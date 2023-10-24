@@ -1,3 +1,5 @@
+@import '../variables/variables.scss';
+
 .body {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -12,13 +14,13 @@
 		overflow: hidden;
 	}
 
-	&--menu-open {
+	&--nav-open {
 		overflow: hidden;
 
 		&::before {
 			content: '';
 			position: fixed;
-			z-index: 1;
+			z-index: $z-index-body-nav-open;
 			width: 100%;
 			max-width: 100vw;
 			background-color: rgb(255 255 255 / 60%);

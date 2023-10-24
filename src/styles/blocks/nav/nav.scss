@@ -1,32 +1,28 @@
 @import '../../variables/variables.scss';
 
 .nav {
-	display: flex;
-
 	@media (max-width: $tablet-width) {
 		position: absolute;
 		left: 0;
 		right: 0;
 		top: -350%;
-		flex-direction: column;
 		transition: all 0.5s ease-in;
 	}
-}
 
-.nav--open {
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: 0;
-	justify-content: center;
-	padding: 100px 20px 80px 20px;
-	box-shadow: 0 0 10px rgb(000 000 000 / 60%);
-	background-color: var(--bg);
-	transition: all 0.5s ease;
-
-	& .nav-list {
-		opacity: 1;
+	&--open {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		padding: 100px 20px 80px 20px;
+		box-shadow: 0 0 10px rgb(000 000 000 / 60%);
+		background-color: var(--bg);
 		transition: all 0.5s ease;
-		pointer-events: all;
+
+		& .nav-list {
+			opacity: 1;
+			transition: all 0.5 ease;
+			pointer-events: all;
+		}
 	}
 }
