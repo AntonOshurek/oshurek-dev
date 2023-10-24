@@ -1,0 +1,14 @@
+.basic-link {
+	align-self: center;
+	justify-self: flex-end;
+	grid-area: link;
+	font-family: var(--basic-font);
+	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
+	text-decoration: none;
+	color: var(--link-text);
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
