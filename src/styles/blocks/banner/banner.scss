@@ -1,4 +1,4 @@
-@import '../../variables/variables.scss';
+@import '../../variables/variables';
 
 .banner {
 	padding: 33px var(--safe-side-paddings) 60px var(--safe-side-paddings);
@@ -16,15 +16,15 @@
 	grid-template-rows: repeat(3, min-content);
 
 	@media (max-width: $tablet-width) {
-		grid-template-columns: 1fr;
+		justify-items: center;
+		grid-row-gap: 0;
 		grid-template-areas:
 			'avatar'
 			'title'
 			'info'
 			'button';
+		grid-template-columns: 1fr;
 		grid-template-rows: repeat(4, max-content);
-		justify-items: center;
-		grid-row-gap: 0;
 	}
 }
 
@@ -37,8 +37,8 @@
 	color: var(--primary-text);
 
 	@media (max-width: $tablet-width) {
-		text-align: center;
 		padding-bottom: 35px;
+		text-align: center;
 	}
 }
 
@@ -50,8 +50,8 @@
 	color: var(--primary-text);
 
 	@media (max-width: $tablet-width) {
-		text-align: center;
 		padding-bottom: 27px;
+		text-align: center;
 	}
 }
 
@@ -85,9 +85,9 @@
 	object-fit: cover;
 
 	@media (max-width: $tablet-width) {
+		margin-bottom: 37px;
 		width: 250px;
 		height: 250px;
-		margin-bottom: 37px;
 	}
 
 	@media (max-width: $mobile-width) {

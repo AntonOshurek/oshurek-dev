@@ -1,9 +1,9 @@
-@import '../variables/variables.scss';
+@import '../variables/variables';
 
 .header {
+	z-index: $z-index-header;
 	padding: 30px var(--safe-side-paddings);
 	width: 100%;
-	z-index: $z-index-header;
 }
 
 .header__wrap {
