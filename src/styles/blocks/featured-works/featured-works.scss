@@ -1,23 +1,22 @@
 @import '../../variables/variables';
 
-.recent-posts {
-	padding: 30px var(--safe-side-paddings) 40px var(--safe-side-paddings);
+.featured-works {
+	padding: 30px var(--safe-side-paddings);
 	width: 100%;
-	background-color: var(--second-bg);
+	background-color: var(--bg);
 }
 
-.recent-posts__wrap {
+.featured-works__wrap {
 	display: grid;
 	grid-template-areas:
 		'title link'
-		'postslist postslist';
+		'worksList worksList';
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content 1fr;
 	gap: 20px;
 }
 
-.recent-posts__title {
-	align-self: center;
+.featured-works__title {
 	grid-area: title;
 	font-family: var(--basic-font);
 	font-weight: var(--s-title-weight);
@@ -25,7 +24,7 @@
 	color: var(--primary-text);
 }
 
-.recent-posts__all-posts-link {
+.featured-works__all-works-link {
 	align-self: center;
 	justify-self: flex-end;
 	grid-area: link;
@@ -40,6 +39,6 @@
 	}
 }
 
-.recent-posts__list {
-	grid-area: postslist;
+.featured-works__list {
+	grid-area: worksList;
 }
