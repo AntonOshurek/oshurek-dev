@@ -1,14 +1,16 @@
+@import '../../variables/variables.scss';
+
 .nav-button {
 	display: none;
 	justify-self: flex-end;
 	border: none;
-	width: 40px;
-	height: 40px;
+	width: 60px;
+	height: 60px;
 	background-color: transparent;
 	cursor: pointer;
 
 	@media (max-width: $tablet-width) {
-		z-index: 1;
+		z-index: $z-index-nav-button;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -40,7 +42,7 @@
 
 .nav-button__burger-line {
 	fill: none;
-	stroke: #000000;
+	stroke: var(--primary-text);
 	stroke-linecap: round;
 	stroke-width: 5.5;
 	transition:
