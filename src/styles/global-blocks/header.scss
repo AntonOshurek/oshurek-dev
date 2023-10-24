@@ -11,4 +11,9 @@
 	align-items: center;
 	justify-content: flex-end;
 	gap: 40px;
+
+	@media (max-width: $tablet-width) {
+		flex-direction: row-reverse;
+		justify-content: flex-start;
+	}
 }
