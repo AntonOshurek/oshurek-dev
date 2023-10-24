@@ -2,6 +2,50 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/scripts/components/mobile-menu.js":
+/*!***********************************************!*\
+  !*** ./src/scripts/components/mobile-menu.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const mobileMenu = () => {
+  const mobileButton = document.querySelector('.nav-button');
+  const mobileBtnIcon = document.querySelector('.nav-button__burger');
+  const navigation = document.querySelector('.nav');
+  const body = document.querySelector('.body');
+  let menuStatus;
+  const toogleMobileMenu = () => {
+    menuStatus ? closeMobileMenu() : openMobileMenu();
+  };
+  const onBackgroundClick = evt => {
+    if (evt.target.parentElement.tagName === 'HTML') {
+      closeMobileMenu();
+    }
+  };
+  function openMobileMenu() {
+    navigation.classList.add('nav--open');
+    body.classList.add('body--menu-open');
+    mobileBtnIcon.classList.add('nav-button__burger--active');
+    menuStatus = true;
+    body.addEventListener('click', onBackgroundClick);
+  }
+  function closeMobileMenu() {
+    navigation.classList.remove('nav--open');
+    body.classList.remove('body--menu-open');
+    mobileBtnIcon.classList.remove('nav-button__burger--active');
+    menuStatus = false;
+    body.removeEventListener('click', onBackgroundClick);
+  }
+  mobileButton.addEventListener('click', toogleMobileMenu);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mobileMenu);
+
+/***/ }),
+
 /***/ "./src/scripts/components/theme-switcher.js":
 /*!**************************************************!*\
   !*** ./src/scripts/components/theme-switcher.js ***!
@@ -144,9 +188,12 @@ var __webpack_exports__ = {};
   \******************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_theme_switcher_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/theme-switcher.js */ "./src/scripts/components/theme-switcher.js");
+/* harmony import */ var _components_mobile_menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/mobile-menu.js */ "./src/scripts/components/mobile-menu.js");
+
 
 window.addEventListener('DOMContentLoaded', () => {
   (0,_components_theme_switcher_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  (0,_components_mobile_menu_js__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 })();
 

@@ -1,6 +1,7 @@
 .header {
 	padding: 30px var(--safe-side-paddings);
 	width: 100%;
+	z-index: 2;
 }
 
 .header__wrap {
