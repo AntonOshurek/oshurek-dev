@@ -37,6 +37,30 @@
 		<header class="header">
 			<h1 class="visually-hidden">Anton Oshurek personal blog page</h1>
 			<div class="header__wrap container">
+				<button class="nav-button" type="button">
+					<span class="visually-hidden">open/close mobile navigation menu</span>
+					<svg
+						class="nav-button__burger"
+						aria-hidden="true"
+						focusable="false"
+						viewBox="0 0 100 100"
+						width="80"
+					>
+						<path
+							class="nav-button__burger-line nav-button__burger-line--top"
+							d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013"
+						/>
+						<path
+							class="nav-button__burger-line nav-button__burger-line--middle"
+							d="m 70,50 h -40"
+						/>
+						<path
+							class="nav-button__burger-line nav-button__burger-line--bottom"
+							d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40"
+						/>
+					</svg>
+				</button>
+
 				<nav class="nav">
 					<h2 class="visually-hidden">Page navigation</h2>
 					<ul class="nav-list">
@@ -109,10 +133,10 @@
 			<section class="recent-posts">
 				<div class="recent-posts__wrap content-container">
 					<h2 class="recent-posts__title">Recent posts</h2>
-					<a class="recent-posts__all-posts-link" href="">View all</a>
+					<a class="basic-link" href="">View all</a>
 
-					<ul class="recent-posts__list">
-						<li class="recent-posts__item">
+					<ul class="recent-posts-list recent-posts__list">
+						<li class="recent-posts-list__item">
 							<article class="recent-post">
 								<h3 class="recent-post__title">Making a design system from scratch</h3>
 								<time class="recent-post__date" datetime="2016-11-18T09:54">12 feb 2023</time>
@@ -128,7 +152,7 @@
 								</p>
 							</article>
 						</li>
-						<li class="recent-posts__item">
+						<li class="recent-posts-list__item">
 							<article class="recent-post">
 								<h3 class="recent-post__title">Making a design system from scratch</h3>
 								<time class="recent-post__date" datetime="2016-11-18T09:54">12 feb 2023</time>
@@ -151,19 +175,21 @@
 			<section class="featured-works">
 				<div class="featured-works__wrap content-container">
 					<h2 class="featured-works__title">Featured works</h2>
-					<ul class="featured-works-list">
+					<a class="basic-link" href="#">View all</a>
+
+					<ul class="featured-works-list featured-works__list">
 						<li class="featured-works-list__item">
-							<article class="featured-works-list__article">
-								<h3 class="featured-works-list__title">Designing Dashboards</h3>
-								<time class="featured-works-list__date" datetime="2016-11-18T09:54">2022</time>
-								<h4 class="featured-works-list__subtitle">Dashboard</h4>
-								<p class="featured-works-list__description">
+							<article class="featured-work">
+								<h3 class="featured-work__title">Designing Dashboards</h3>
+								<time class="featured-work__date" datetime="2016-11-18T09:54">2022</time>
+								<h4 class="featured-work__subtitle">Dashboard</h4>
+								<p class="featured-work__description">
 									Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
 									officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
 									nostrud amet.
 								</p>
 								<img
-									class="featured-works-list__image"
+									class="featured-work__image"
 									src="https://previews.123rf.com/images/epicfail/epicfail1702/epicfail170200239/72740134-thin-line-design-concept-for-project-website-banner.jpg"
 									alt=""
 									width="246"
@@ -172,17 +198,17 @@
 							</article>
 						</li>
 						<li class="featured-works-list__item">
-							<article class="featured-works-list__article">
-								<h3 class="featured-works-list__title">Designing Dashboards</h3>
-								<time class="featured-works-list__date" datetime="2016-11-18T09:54">2022</time>
-								<h4 class="featured-works-list__subtitle">Dashboard</h4>
-								<p class="featured-works-list__description">
+							<article class="featured-work">
+								<h3 class="featured-work__title">Designing Dashboards</h3>
+								<time class="featured-work__date" datetime="2016-11-18T09:54">2022</time>
+								<h4 class="featured-work__subtitle">Dashboard</h4>
+								<p class="featured-work__description">
 									Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
 									officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
 									nostrud amet.
 								</p>
 								<img
-									class="featured-works-list__image"
+									class="featured-work__image"
 									src="https://previews.123rf.com/images/epicfail/epicfail1702/epicfail170200239/72740134-thin-line-design-concept-for-project-website-banner.jpg"
 									alt=""
 									width="246"
@@ -191,17 +217,17 @@
 							</article>
 						</li>
 						<li class="featured-works-list__item">
-							<article class="featured-works-list__article">
-								<h3 class="featured-works-list__title">Designing Dashboards</h3>
-								<time class="featured-works-list__date" datetime="2016-11-18T09:54">2022</time>
-								<h4 class="featured-works-list__subtitle">Dashboard</h4>
-								<p class="featured-works-list__description">
+							<article class="featured-work">
+								<h3 class="featured-work__title">Designing Dashboards</h3>
+								<time class="featured-work__date" datetime="2016-11-18T09:54">2022</time>
+								<h4 class="featured-work__subtitle">Dashboard</h4>
+								<p class="featured-work__description">
 									Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
 									officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
 									nostrud amet.
 								</p>
 								<img
-									class="featured-works-list__image"
+									class="featured-work__image"
 									src="https://previews.123rf.com/images/epicfail/epicfail1702/epicfail170200239/72740134-thin-line-design-concept-for-project-website-banner.jpg"
 									alt=""
 									width="246"

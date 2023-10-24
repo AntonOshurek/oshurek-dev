@@ -1,0 +1,27 @@
+@import '../../variables/variables';
+
+.featured-works-list {
+	display: grid;
+	justify-items: center;
+	grid-row-gap: 30px;
+	grid-template-columns: 1fr;
+}
+
+.featured-works-list__item {
+	position: relative;
+	list-style: none;
+
+	&:not(:last-child)::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -15px;
+		width: 100%;
+		height: 1px;
+		background-color: var(--decor-color);
+	}
+
+	@media (max-width: $mobile-width) {
+		max-width: 350px;
+	}
+}

@@ -1,4 +1,7 @@
+@import '../variables/variables';
+
 .header {
+	z-index: $z-index-header;
 	padding: 30px var(--safe-side-paddings);
 	width: 100%;
 }
@@ -8,4 +11,9 @@
 	align-items: center;
 	justify-content: flex-end;
 	gap: 40px;
+
+	@media (max-width: $tablet-width) {
+		flex-direction: row-reverse;
+		justify-content: flex-start;
+	}
 }

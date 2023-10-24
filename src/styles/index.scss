@@ -3,11 +3,7 @@
 @import './variables/variables';
 
 /* global blocks */
-@import './global-blocks/body';
-@import './global-blocks/footer';
-@import './global-blocks/header';
-@import './global-blocks/main';
-@import './global-blocks/theme-switcher';
+@import './global-blocks/index';
 
 /* blocks */
 @import './blocks/index';
