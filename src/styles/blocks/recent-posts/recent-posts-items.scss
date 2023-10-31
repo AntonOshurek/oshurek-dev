@@ -1,6 +1,6 @@
 @import '../../variables/variables';
 
-.recent-posts-list {
+.recent-posts-items {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
@@ -8,8 +8,4 @@
 	@media (max-width: $tablet-width) {
 		grid-template-columns: 1fr;
 	}
-}
-
-.recent-posts-list__item {
-	list-style: none;
 }

@@ -1,0 +1,20 @@
+.blog {
+	padding: 33px var(--safe-side-paddings) 60px var(--safe-side-paddings);
+}
+
+.blog__wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.blog__title {
+	padding: 55px 0;
+	width: 100%;
+	font-family: var(--basic-font);
+	font-weight: var(--xxl-title-weight);
+	font-size: var(--xxl-title-size);
+	text-align: left;
+	color: var(--primary-text);
+}

@@ -12,9 +12,19 @@
 	max-width: $desctope-width;
 }
 
-.content-container {
+.home-container {
 	margin: 0 auto;
-	max-width: $content-desctope-width;
+	max-width: $home-content-max-width;
+}
+
+.blog-container {
+	margin: 0 auto;
+	max-width: $blog-content-max-width;
+}
+
+.works-container {
+	margin: 0 auto;
+	max-width: $works-content-max-width;
 }
 
 .visually-hidden {
