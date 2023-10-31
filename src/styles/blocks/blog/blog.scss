@@ -5,16 +5,16 @@
 .blog__wrap {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
 	align-items: center;
+	justify-content: flex-end;
 }
 
 .blog__title {
+	padding: 55px 0;
 	width: 100%;
+	font-family: var(--basic-font);
+	font-weight: var(--xxl-title-weight);
+	font-size: var(--xxl-title-size);
 	text-align: left;
 	color: var(--primary-text);
-	font-family: var(--basic-font);
-	font-size: var(--xxl-title-size);
-	font-weight: var(--xxl-title-weight);
-	padding: 55px 0;
 }

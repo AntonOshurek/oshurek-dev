@@ -1,0 +1,8 @@
+@import '../../variables/variables';
+
+.featured-works-items {
+	display: grid;
+	justify-items: center;
+	grid-row-gap: 30px;
+	grid-template-columns: 1fr;
+}

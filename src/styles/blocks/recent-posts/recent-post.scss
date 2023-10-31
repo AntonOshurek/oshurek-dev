@@ -1,4 +1,5 @@
 .recent-post {
+	position: relative;
 	display: grid;
 	grid-template-areas:
 		'title title'
@@ -13,7 +14,6 @@
 	box-shadow: var(--shadow);
 	background-color: var(--overlay);
 	gap: 17px;
-	position: relative;
 }
 
 .recent-post__title {
@@ -69,10 +69,10 @@
 
 .recent-post__link {
 	position: absolute;
-	top: 0;
 	left: 0;
+	top: 0;
+	z-index: 1;
 	width: 100%;
 	height: 100%;
 	background-color: transparent;
-	z-index: 1;
 }
