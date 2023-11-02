@@ -1,16 +1,15 @@
 @import '../../variables/variables';
 
 .recent-posts {
-	padding: 30px 0 40px 0;
-	width: 100%;
-	background-color: var(--second-bg);
-
 	display: grid;
 	grid-template-areas:
 		'title link'
 		'postslist postslist';
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content 1fr;
+	padding: 30px 0 40px;
+	width: 100%;
+	background-color: var(--second-bg);
 	gap: 20px;
 }
 

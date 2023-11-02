@@ -1,16 +1,15 @@
 @import '../../variables/variables';
 
 .featured-works {
-	padding: 30px 0;
-	width: 100%;
-	background-color: var(--bg);
-
 	display: grid;
 	grid-template-areas:
 		'title link'
 		'worksList worksList';
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content 1fr;
+	padding: 30px 0;
+	width: 100%;
+	background-color: var(--bg);
 	gap: 20px;
 }
 
