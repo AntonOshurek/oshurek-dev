@@ -1,0 +1,27 @@
+.project-part {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+.project-part__title {
+	color: var(--primary-text);
+	font-family: var(--basic-font);
+	font-size: var(--l-title-slim-size);
+	font-weight: var(--l-title-slim-weight);
+}
+
+.project-part__text {
+	color: var(--dark-white-text);
+	font-family: var(--basic-font);
+	font-size: var(--s-text-size);
+	font-weight: var(--s-text-weight);
+}
+
+.project-part__img {
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+}
