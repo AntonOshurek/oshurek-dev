@@ -1,18 +1,15 @@
 @import '../../variables/variables';
 
 .featured-works {
-	padding: 30px var(--safe-side-paddings);
-	width: 100%;
-	background-color: var(--bg);
-}
-
-.featured-works__wrap {
 	display: grid;
 	grid-template-areas:
 		'title link'
 		'worksList worksList';
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content 1fr;
+	padding: 30px 0;
+	width: 100%;
+	background-color: var(--bg);
 	gap: 20px;
 }
 
@@ -24,6 +21,6 @@
 	color: var(--primary-text);
 }
 
-.featured-works__works {
+.featured-works__items {
 	grid-area: worksList;
 }

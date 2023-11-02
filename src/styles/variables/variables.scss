@@ -14,6 +14,8 @@ $z-index-nav-button: 3;
 :root {
 	/* sizes variables */
 	--safe-side-paddings: 20px;
+	--work-record-items-gap: 30px;
+	--main-paddings: 33px var(--safe-side-paddings) 60px var(--safe-side-paddings);
 
 	/* fonts variables */
 	--basic-font: heebo, arial, sans-serif;
@@ -23,6 +25,8 @@ $z-index-nav-button: 3;
 	--s-text-weight: 400;
 	--m-text-size: 18px;
 	--m-text-weight: 400;
+	--m-text-fat-size: 18px;
+	--m-text-fat-weight: 700;
 	--l-text-size: 20px;
 	--l-text-weight: 400;
 	--l-fat-text-size: 20px;
@@ -35,6 +39,8 @@ $z-index-nav-button: 3;
 	--l-title-weight: 700;
 	--l-title-slim-size: 30px;
 	--l-title-slim-weight: 500;
+	--xl-title-size: 34px;
+	--xl-title-weight: 700;
 	--xxl-title-size: 44px;
 	--xxl-title-weight: 700;
 }
