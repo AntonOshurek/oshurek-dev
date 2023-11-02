@@ -1,13 +1,11 @@
 @import '../../variables/variables';
 
 .banner {
-	padding: 33px var(--safe-side-paddings) 60px var(--safe-side-paddings);
-}
-
-.banner__wrap {
+	padding: 33px 0 60px 0;
 	display: grid;
 	grid-column-gap: 100px;
 	grid-row-gap: 40px;
+	background-color: var(--bg);
 	grid-template-areas:
 		'title avatar'
 		'info avatar'

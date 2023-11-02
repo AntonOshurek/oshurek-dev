@@ -13,18 +13,6 @@
 	grid-template-columns: minmax(150px, 250px) min-content 1fr;
 	grid-template-rows: min-content min-content 1fr;
 
-	@media (max-width: $mobile-width) {
-		grid-column-gap: 18px;
-		grid-row-gap: 17px;
-		grid-template-areas:
-			'img img'
-			'title title'
-			'date subtitle'
-			'description description';
-		grid-template-columns: max-content 1fr;
-		grid-template-rows: min-content min-content min-content 1fr;
-	}
-
 	&--works-page {
 		&::after {
 			content: '';
@@ -54,13 +42,25 @@
 	}
 
 	&--work-page {
-		grid-template-rows: repeat(4, min-content);
-		grid-template-columns: min-content min-content 1fr;
 		grid-template-areas:
 			'title title title'
 			'date subtitle subtitle'
 			'description description description'
 			'img img img';
+		grid-template-columns: min-content min-content 1fr;
+		grid-template-rows: repeat(4, min-content);
+	}
+
+	@media (max-width: $mobile-width) {
+		grid-column-gap: 18px;
+		grid-row-gap: 17px;
+		grid-template-areas:
+			'img img'
+			'title title'
+			'date subtitle'
+			'description description';
+		grid-template-columns: max-content 1fr;
+		grid-template-rows: min-content min-content min-content 1fr;
 	}
 }
 
