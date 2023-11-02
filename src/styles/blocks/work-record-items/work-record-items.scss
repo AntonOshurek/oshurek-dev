@@ -1,0 +1,6 @@
+.work-record-items {
+	display: grid;
+	justify-items: center;
+	grid-row-gap: var(--work-record-items-gap);
+	grid-template-columns: 1fr;
+}
