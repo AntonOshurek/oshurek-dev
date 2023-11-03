@@ -27,6 +27,11 @@
 	max-width: $works-content-max-width;
 }
 
+.post-container {
+	margin: 0 auto;
+	max-width: $post-content-max-width;
+}
+
 .visually-hidden {
 	position: absolute;
 	overflow: hidden;

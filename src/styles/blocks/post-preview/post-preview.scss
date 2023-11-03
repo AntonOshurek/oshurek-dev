@@ -1,0 +1,117 @@
+.post-preview {
+	position: relative;
+	display: grid;
+	grid-template-areas:
+		'title title'
+		'date tags'
+		'overview overview';
+	grid-template-columns: max-content 1fr;
+	grid-template-rows: min-content min-content 1fr;
+	width: 100%;
+	height: 100%;
+	gap: 17px;
+
+	&--blog {
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: calc(-1 * var(--post-items-gap) / 2);
+			width: 100%;
+			height: 2px;
+			background-color: var(--decor-color);
+		}
+
+		& .post-preview__title {
+			font-weight: var(--l-title-slim-weight);
+			font-size: var(--l-title-slim-size);
+		}
+
+		& .post-preview__date {
+			font-weight: var(--l-text-weight);
+			font-size: var(--l-text-size);
+		}
+
+		& .post-preview__tag {
+			font-weight: var(--l-text-weight);
+			font-size: var(--l-text-size);
+			color: var(--secondary-text);
+		}
+	}
+
+	&--recent {
+		border-radius: 4px;
+		padding: 24px;
+		box-shadow: var(--shadow);
+		background-color: var(--overlay);
+
+		& .post-preview__title {
+			font-weight: var(--m-title-weight);
+			font-size: var(--m-title-size);
+		}
+
+		& .post-preview__date {
+			font-weight: var(--m-text-weight);
+			font-size: var(--m-text-size);
+		}
+
+		& .post-preview__tag {
+			font-weight: var(--m-text-weight);
+			font-size: var(--m-text-size);
+			color: var(--primary-text);
+		}
+	}
+}
+
+.post-preview__title {
+	grid-area: title;
+	font-family: var(--basic-font);
+	color: var(--primary-text);
+}
+
+.post-preview__date {
+	grid-area: date;
+	font-family: var(--basic-font);
+	color: var(--primary-text);
+}
+
+.post-preview__tags {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	grid-area: tags;
+	list-style: none;
+	gap: 10px;
+}
+
+.post-preview__tag {
+	position: relative;
+	font-family: var(--basic-font);
+
+	&:not(:last-child)::after {
+		content: ',';
+		position: absolute;
+		right: -5px;
+		bottom: 0;
+		width: max-content;
+		height: max-content;
+	}
+}
+
+.post-preview__overview {
+	grid-area: overview;
+	font-family: var(--basic-font);
+	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
+	color: var(--primary-text);
+}
+
+.post-preview__link {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+}
