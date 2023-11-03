@@ -5,7 +5,7 @@
         <loc>https://www.example.com/blog.html</loc>
     
         
-        <lastmod>2023-11-02T20:26:39.230Z</lastmod>
+        <lastmod>2023-11-03T19:09:13.726Z</lastmod>
     
         
         <changefreq>monthly</changefreq>
@@ -19,7 +19,7 @@
         <loc>https://www.example.com/contact.html</loc>
     
         
-        <lastmod>2023-11-02T20:26:39.230Z</lastmod>
+        <lastmod>2023-11-03T19:09:13.726Z</lastmod>
     
         
         <changefreq>monthly</changefreq>
@@ -33,7 +33,7 @@
         <loc>https://www.example.com/</loc>
     
         
-        <lastmod>2023-11-02T20:26:39.234Z</lastmod>
+        <lastmod>2023-11-03T19:09:13.730Z</lastmod>
     
         
         <changefreq>monthly</changefreq>
@@ -44,10 +44,24 @@
     </url>
     <url>
         
+        <loc>https://www.example.com/post.html</loc>
+    
+        
+        <lastmod>2023-11-03T19:09:13.730Z</lastmod>
+    
+        
+        <changefreq>monthly</changefreq>
+    
+        
+        <priority>0.9</priority>
+    
+    </url>
+    <url>
+        
         <loc>https://www.example.com/work.html</loc>
     
         
-        <lastmod>2023-11-02T20:26:39.234Z</lastmod>
+        <lastmod>2023-11-03T19:09:13.730Z</lastmod>
     
         
         <changefreq>monthly</changefreq>
@@ -61,7 +75,7 @@
         <loc>https://www.example.com/works.html</loc>
     
         
-        <lastmod>2023-11-02T20:26:39.234Z</lastmod>
+        <lastmod>2023-11-03T19:09:13.730Z</lastmod>
     
         
         <changefreq>monthly</changefreq>
