@@ -2,15 +2,13 @@
 @import './nav/nav';
 @import './nav/nav-btn';
 @import './banner/banner';
-@import './recent-posts/recent-posts';
-@import './featured-works/featured-works';
 @import './code/code.scss';
 //post
-@import './post/blog/';
-@import './post/post-preview/';
+@import './post/blog/blog.scss';
+@import './post/post-preview/post-preview.scss';
 @import './post/post-part/post-part.scss';
-@import './post/post-items/';
-@import './post/post/';
+@import './post/post-items/post-items.scss';
+@import './post/post/post.scss';
 @import './post/recent-posts/recent-posts.scss';
 //work
 @import './work/works/works.scss';
