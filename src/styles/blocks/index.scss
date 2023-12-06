@@ -4,14 +4,18 @@
 @import './banner/banner';
 @import './recent-posts/recent-posts';
 @import './featured-works/featured-works';
-@import './blog/blog';
-@import './works/works';
-@import './work/work';
-@import './work-preview/work-preview.scss';
-@import './work-items/work-items.scss';
-@import './work-part/work-part';
-@import './post-preview/post-preview';
-@import './post-items/post-items';
-@import './post/post.scss';
-@import './post-part/post-part.scss';
 @import './code/code.scss';
+//post
+@import './post/blog/';
+@import './post/post-preview/';
+@import './post/post-part/post-part.scss';
+@import './post/post-items/';
+@import './post/post/';
+@import './post/recent-posts/recent-posts.scss';
+//work
+@import './work/works/works.scss';
+@import './work/work-preview/work-preview.scss';
+@import './work/work-part/work-part.scss';
+@import './work/work-items/work-items.scss';
+@import './work/work/work.scss';
+@import './work/featured-works/featured-works.scss';
