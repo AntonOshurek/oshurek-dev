@@ -27,6 +27,16 @@
 		color: var(--secondary-text);
 	}
 
+	&--image {
+		grid-template-areas:
+			'title title'
+			'date tags'
+			'img img'
+			'overview overview';
+		grid-template-columns: max-content 1fr;
+		grid-template-rows: min-content min-content min-content 1fr;
+	}
+
 	&--blog {
 		&::after {
 			content: '';
@@ -114,4 +124,12 @@
 	width: 100%;
 	height: 100%;
 	background-color: transparent;
+}
+
+.post-preview__image {
+	display: flex;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	grid-area: img;
 }
