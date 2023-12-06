@@ -1,19 +1,19 @@
-@import '../../variables/variables';
+@import '../../../variables/variables';
 
-.featured-works {
+.recent-posts {
 	display: grid;
 	grid-template-areas:
 		'title link'
-		'worksList worksList';
+		'postslist postslist';
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content 1fr;
-	padding: 30px 0;
+	padding: 30px 0 40px;
 	width: 100%;
-	background-color: var(--bg);
 	gap: 20px;
 }
 
-.featured-works__title {
+.recent-posts__title {
+	align-self: center;
 	grid-area: title;
 	font-family: var(--basic-font);
 	font-weight: var(--s-title-weight);
@@ -21,6 +21,6 @@
 	color: var(--primary-text);
 }
 
-.featured-works__items {
-	grid-area: worksList;
+.recent-posts__posts {
+	grid-area: postslist;
 }
