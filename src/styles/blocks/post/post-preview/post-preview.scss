@@ -128,8 +128,8 @@
 
 .post-preview__image {
 	display: flex;
+	grid-area: img;
 	width: 100%;
 	height: 300px;
 	object-fit: cover;
-	grid-area: img;
 }
