@@ -10,6 +10,7 @@
 	background-color: #1b1b1b;
 
 	border-radius: 8px;
+	font-size: 16px;
 	overflow: hidden;
 	tab-size: 2;
 	word-break: normal;
@@ -31,4 +32,8 @@
 
 .code__property {
 	color: #72e0d1;
+}
+
+.code__number {
+	color: #fc9463;
 }
