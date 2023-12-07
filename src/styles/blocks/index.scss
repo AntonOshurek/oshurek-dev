@@ -2,7 +2,6 @@
 @import './nav/nav';
 @import './nav/nav-btn';
 @import './banner/banner';
-@import './code/code.scss';
 //post
 @import './post/blog/blog.scss';
 @import './post/post-preview/post-preview.scss';
@@ -17,3 +16,6 @@
 @import './work/work-items/work-items.scss';
 @import './work/work/work.scss';
 @import './work/featured-works/featured-works.scss';
+//code
+@import './code/code.scss';
+@import './code/code-block.scss';

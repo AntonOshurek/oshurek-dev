@@ -3,37 +3,22 @@
 	margin: 0;
 }
 
-.code__pre {
-	padding: 10px;
-	width: 100%;
-	font-family: monospace;
-	background-color: #1b1b1b;
-
-	border-radius: 8px;
-	font-size: 16px;
-	overflow: hidden;
-	tab-size: 2;
-	word-break: normal;
-	hyphens: none;
-	clear: both;
-}
-
 .code__css {
 	color: #f5d67b;
-}
 
-.code__selector {
-	color: #f5d67b;
-}
+	& .code__selector {
+		color: #f5d67b;
+	}
 
-.code__punctuation {
-	color: #72e0d1;
-}
+	& .code__punctuation {
+		color: #72e0d1;
+	}
 
-.code__property {
-	color: #72e0d1;
-}
+	& .code__property {
+		color: #72e0d1;
+	}
 
-.code__number {
-	color: #fc9463;
+	& .code__number {
+		color: #fc9463;
+	}
 }
