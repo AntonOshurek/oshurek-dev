@@ -1,20 +1,24 @@
 .code {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
-.code__pre {
-	padding: 10px;
-	width: 100%;
-	font-family: monospace;
-	background-color: #1b1b1b;
+.code__css {
+	color: #F5D67B;
 
-	border-radius: 8px;
-	overflow: hidden;
-	tab-size: 2;
-	word-break: normal;
-	hyphens: none;
-	clear: both;
+	& .code__selector {
+		color: #F5D67B;
+	}
 
-	color: #f5d67b;
+	& .code__punctuation {
+		color: #72E0D1;
+	}
+
+	& .code__property {
+		color: #72E0D1;
+	}
+
+	& .code__number {
+		color: #FC9463;
+	}
 }

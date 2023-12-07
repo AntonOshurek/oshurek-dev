@@ -1,0 +1,22 @@
+.code-block {
+	clear: both;
+	overflow: hidden;
+	border-radius: 8px;
+	padding: 10px;
+	width: 100%;
+	box-shadow: var(--shadow);
+
+	// font-family: monospace;
+	font-family:
+		SFMono-Regular,
+		Consolas,
+		"Liberation Mono",
+		Menlo,
+		monospace;
+	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
+	word-break: normal;
+	hyphens: none;
+	tab-size: 2;
+	background-color: var(--code-bg);
+}
