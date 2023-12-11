@@ -18,7 +18,7 @@
 			content: '';
 			position: absolute;
 			left: 0;
-			bottom: calc(-1 * var(--work-record-items-gap) / 2);
+			bottom: calc(-1 * var(--work-items-gap) / 2);
 			width: 100%;
 			height: 1px;
 			background-color: var(--decor-color);
