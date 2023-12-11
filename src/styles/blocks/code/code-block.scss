@@ -1,11 +1,11 @@
 .code-block {
+	display: flex;
 	clear: both;
 	overflow: hidden;
 	border-radius: 8px;
 	padding: 10px;
 	width: 100%;
 	box-shadow: var(--shadow);
-	display: flex;
 
 	// font-family: monospace;
 	font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;

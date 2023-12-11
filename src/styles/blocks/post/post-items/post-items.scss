@@ -2,8 +2,8 @@
 
 .post-items {
 	display: grid;
-	gap: var(--post-items-gap);
 	grid-template-columns: 1fr;
+	gap: var(--post-items-gap);
 
 	&--row {
 		grid-template-columns: 1fr 1fr;
