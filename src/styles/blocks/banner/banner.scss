@@ -6,10 +6,9 @@
 	grid-row-gap: 40px;
 	grid-template-areas:
 		'title avatar'
-		'info avatar'
-		'button avatar';
+		'info avatar';
 	grid-template-columns: 1fr 300px;
-	grid-template-rows: repeat(3, min-content);
+	grid-template-rows: repeat(2, min-content);
 	padding: 33px 0 60px;
 	background-color: var(--bg);
 
@@ -50,26 +49,6 @@
 	@media (max-width: $tablet-width) {
 		padding-bottom: 27px;
 		text-align: center;
-	}
-}
-
-.banner__download-resume {
-	grid-area: button;
-	border: none;
-	border-radius: 2px;
-	padding: 5px 17px;
-	width: max-content;
-	font-family: var(--basic-font);
-	font-weight: var(--l-fat-text-weight);
-	font-size: var(--l-fat-text-size);
-	text-transform: capitalize;
-	color: var(--white-text);
-	background-color: var(--important-item-color);
-	transition: all 0.1s ease;
-	cursor: pointer;
-
-	&:hover {
-		background-color: var(--hover-item-color);
 	}
 }
 
