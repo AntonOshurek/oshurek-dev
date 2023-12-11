@@ -5,14 +5,10 @@
 	padding: 10px;
 	width: 100%;
 	box-shadow: var(--shadow);
+	display: flex;
 
 	// font-family: monospace;
-	font-family:
-		SFMono-Regular,
-		Consolas,
-		"Liberation Mono",
-		Menlo,
-		monospace;
+	font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
 	font-weight: var(--s-text-weight);
 	font-size: var(--s-text-size);
 	word-break: normal;

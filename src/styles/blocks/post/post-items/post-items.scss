@@ -3,12 +3,9 @@
 .post-items {
 	display: grid;
 	gap: var(--post-items-gap);
+	grid-template-columns: 1fr;
 
-	&--blog {
-		grid-template-columns: 1fr;
-	}
-
-	&--recent {
+	&--row {
 		grid-template-columns: 1fr 1fr;
 
 		@media (max-width: $tablet-width) {
