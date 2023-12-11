@@ -49,17 +49,17 @@
 .post-preview__title {
 	grid-area: title;
 	font-family: var(--basic-font);
-	color: var(--primary-text);
 	font-weight: var(--l-title-slim-weight);
 	font-size: var(--l-title-slim-size);
+	color: var(--primary-text);
 }
 
 .post-preview__date {
 	grid-area: date;
 	font-family: var(--basic-font);
-	color: var(--primary-text);
 	font-weight: var(--m-text-weight);
 	font-size: var(--m-text-size);
+	color: var(--primary-text);
 }
 
 .post-preview__tags {
@@ -68,8 +68,8 @@
 	justify-content: flex-start;
 	grid-area: tags;
 	list-style: none;
-	gap: 10px;
 	color: var(--secondary-text);
+	gap: 10px;
 }
 
 .post-preview__tag {
