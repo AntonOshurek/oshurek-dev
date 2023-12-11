@@ -1,24 +1,26 @@
 .code {
 	margin: 0;
 	padding: 0;
+	min-width: 100%;
+	overflow: auto;
 }
 
 .code__css {
-	color: #F5D67B;
+	color: #f5d67b;
 
 	& .code__selector {
-		color: #F5D67B;
+		color: #f5d67b;
 	}
 
 	& .code__punctuation {
-		color: #72E0D1;
+		color: #72e0d1;
 	}
 
 	& .code__property {
-		color: #72E0D1;
+		color: #72e0d1;
 	}
 
 	& .code__number {
-		color: #FC9463;
+		color: #fc9463;
 	}
 }

@@ -6,36 +6,3 @@
 	box-sizing: border-box;
 	font-family: Heebo, Arial, sans-serif;
 }
-
-.container {
-	margin: 0 auto;
-	max-width: $desctope-width;
-}
-
-.home-container {
-	margin: 0 auto;
-	max-width: $home-content-max-width;
-}
-
-.blog-container {
-	margin: 0 auto;
-	max-width: $blog-content-max-width;
-}
-
-.works-container {
-	margin: 0 auto;
-	max-width: $works-content-max-width;
-}
-
-.post-container {
-	margin: 0 auto;
-	max-width: $post-content-max-width;
-}
-
-.visually-hidden {
-	position: absolute;
-	overflow: hidden;
-	width: 1px;
-	height: 1px;
-	clip: rect(0 0 0 0);
-}
