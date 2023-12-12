@@ -1,12 +1,12 @@
-@import './global/global-styles';
-@import './global/fonts';
-@import './variables/variables';
+@import './global/global-styles.scss';
+@import './global/fonts.scss';
+@import './variables/variables.scss';
 
 /* common */
-@import './common/index';
+@import './common/index.scss';
 
 /* global blocks */
-@import './global-blocks/index';
+@import './global-blocks/index.scss';
 
 /* blocks */
-@import './blocks/index';
+@import './blocks/index.scss';

@@ -38,20 +38,11 @@
 		padding: 24px;
 		box-shadow: var(--shadow);
 		background-color: var(--overlay);
-
-		& .article-preview__title {
-			font-weight: var(--m-title-weight);
-			font-size: var(--m-title-size);
-		}
 	}
 }
 
 .article-preview__title {
 	grid-area: title;
-	font-family: var(--basic-font);
-	font-weight: var(--l-title-slim-weight);
-	font-size: var(--l-title-slim-size);
-	color: var(--primary-text);
 }
 
 .article-preview__date {
@@ -90,10 +81,6 @@
 
 .article-preview__overview {
 	grid-area: overview;
-	font-family: var(--basic-font);
-	font-weight: var(--s-text-weight);
-	font-size: var(--s-text-size);
-	color: var(--primary-text);
 }
 
 .article-preview__link {

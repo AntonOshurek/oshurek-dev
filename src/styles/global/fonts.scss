@@ -1,39 +1,68 @@
 @font-face {
-  src: url('../fonts/Heebo-Bold.woff2') format('woff2'),
-    url('../fonts/Heebo-Bold.woff') format('woff');
-  font-family: Heebo;
-  font-weight: 700;
-  font-display: swap;
+	src:
+		url('../fonts/Heebo-Bold.woff2') format('woff2'),
+		url('../fonts/Heebo-Bold.woff') format('woff');
+	font-family: Heebo;
+	font-weight: 700;
+	font-display: swap;
 }
 
 @font-face {
-  src: url('../fonts/Heebo-SemiBold.woff2') format('woff2'),
-    url('../fonts/Heebo-SemiBold.woff') format('woff');
-  font-family: Heebo;
-  font-weight: 600;
-  font-display: swap;
+	src:
+		url('../fonts/Heebo-SemiBold.woff2') format('woff2'),
+		url('../fonts/Heebo-SemiBold.woff') format('woff');
+	font-family: Heebo;
+	font-weight: 600;
+	font-display: swap;
 }
 
 @font-face {
-  src: url('../fonts/Heebo-Medium.woff2') format('woff2'),
-    url('../fonts/Heebo-Medium.woff') format('woff');
-  font-family: Heebo;
-  font-weight: 500;
-  font-display: swap;
+	src:
+		url('../fonts/Heebo-Medium.woff2') format('woff2'),
+		url('../fonts/Heebo-Medium.woff') format('woff');
+	font-family: Heebo;
+	font-weight: 500;
+	font-display: swap;
 }
 
 @font-face {
-  src: url('../fonts/Heebo-Regular.woff2') format('woff2'),
-    url('../fonts/Heebo-Regular.woff') format('woff');
-  font-family: Heebo;
-  font-weight: 400;
-  font-display: swap;
+	src:
+		url('../fonts/Heebo-Regular.woff2') format('woff2'),
+		url('../fonts/Heebo-Regular.woff') format('woff');
+	font-family: Heebo;
+	font-weight: 400;
+	font-display: swap;
 }
 
 @font-face {
-  src: url('../fonts/Heebo-Light.woff2') format('woff2'),
-    url('../fonts/Heebo-Light.woff') format('woff');
-  font-family: Heebo;
-  font-weight: 300;
-  font-display: swap;
+	src:
+		url('../fonts/Heebo-Light.woff2') format('woff2'),
+		url('../fonts/Heebo-Light.woff') format('woff');
+	font-family: Heebo;
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	src: url('../fonts/article-title-font/Oswald-VariableFont_wght.woff2'),
+		url('../fonts/article-title-font/Oswald-VariableFont_wght.woff');
+	font-family: Oswald;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	src: url('../fonts/article-text-font/Merriweather-Regular.woff2'),
+		url('../fonts/article-text-font/Merriweather-Regular.woff');
+	font-family: Merriweather;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	src: url('../../fonts/article-text-font/Merriweather-Bold.woff2'),
+		url('../../fonts/article-text-font/Merriweather-Bold.woff');
+	font-family: Merriweather;
+	font-weight: 700;
+	font-display: swap;
 }

@@ -18,18 +18,24 @@ $z-index-nav-button: 3;
 	--post-items-gap: 30px;
 	--main-paddings: 33px var(--safe-side-paddings) 60px var(--safe-side-paddings);
 
-	/* fonts variables */
+	/* fonts */
 	--basic-font: heebo, arial, sans-serif;
+	--article-paragraph-font: Merriweather, sans-serif;
+	--article-title-font: Oswald, sans-serif;
+
+	/* fonts sizes */
 	--xs-text-size: 14px;
 	--xs-text-weight: 400;
 	--s-text-size: 16px;
 	--s-text-weight: 400;
 	--m-text-size: 18px;
 	--m-text-weight: 400;
+	--m-text-line-height: 28px;
 	--m-text-fat-size: 18px;
 	--m-text-fat-weight: 700;
 	--l-text-size: 20px;
 	--l-text-weight: 400;
+	--l-text-line-height: 30px;
 	--l-fat-text-size: 20px;
 	--l-fat-text-weight: 500;
 	--s-title-size: 22px;
@@ -44,9 +50,4 @@ $z-index-nav-button: 3;
 	--xl-title-weight: 700;
 	--xxl-title-size: 44px;
 	--xxl-title-weight: 700;
-
-	/*text for reading*/
-	--article-font-size: 20px;
-	--article-font-weight: 400;
-	--article-line-height: 32px;
 }

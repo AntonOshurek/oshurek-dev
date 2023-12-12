@@ -197,7 +197,7 @@ export const copyImages = () => {
 export const copy = (done) => {
 	src(
 		[
-			`${paths.srcFontsFolder}/*.{woff2,woff}`,
+			`${paths.srcFontsFolder}/**/*.{woff2,woff}`,
 			`${srcFolder}/*.ico`,
 			`${srcFolder}/manifest.webmanifest`,
 		],
