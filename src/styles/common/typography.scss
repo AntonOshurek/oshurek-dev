@@ -5,12 +5,14 @@
 	font-weight: var(--xl-title-weight);
 	font-size: var(--xl-title-size);
 	color: var(--primary-text);
+	line-height: var(--xl-title-line-height);
 }
 
 .article-sub-title {
 	font-family: var(--article-title-font);
 	font-weight: 500;
 	font-size: var(--l-title-slim-size);
+	line-height: var(--l-title-slim-line-height-size);
 	color: var(--primary-text);
 }
 
@@ -33,6 +35,7 @@
 	font-weight: var(--m-title-weight);
 	font-size: var(--m-title-size);
 	color: var(--primary-text);
+	line-height: var(--m-title-line-height);
 }
 
 .article-preview-card-paragraph {
@@ -47,4 +50,18 @@
 		font-size: var(--s-text-size);
 		line-height: var(--s-text-line-height);
 	}
+}
+
+.article-tag {
+	font-family: var(--basic-font);
+	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
+	color: var(--secondary-text);
+}
+
+.article-date {
+	font-family: var(--basic-font);
+	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
+	color: var(--primary-text);
 }

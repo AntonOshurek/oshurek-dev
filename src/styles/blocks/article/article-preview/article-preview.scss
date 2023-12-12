@@ -1,3 +1,5 @@
+@import '../../../variables/variables.scss';
+
 .article-preview {
 	position: relative;
 	display: grid;
@@ -33,12 +35,9 @@
 		}
 	}
 
-	// &--card {
-	// 	border-radius: 4px;
-	// 	padding: 24px;
-	// 	box-shadow: var(--shadow);
-	// 	background-color: var(--overlay);
-	// }
+	@media (max-width: $mobile-width) {
+		gap: 10px;
+	}
 }
 
 .article-preview__title {
@@ -47,10 +46,6 @@
 
 .article-preview__date {
 	grid-area: date;
-	font-family: var(--basic-font);
-	font-weight: var(--m-text-weight);
-	font-size: var(--m-text-size);
-	color: var(--primary-text);
 }
 
 .article-preview__tags {
@@ -59,15 +54,11 @@
 	justify-content: flex-start;
 	grid-area: tags;
 	list-style: none;
-	color: var(--secondary-text);
 	gap: 10px;
 }
 
 .article-preview__tag {
 	position: relative;
-	font-family: var(--basic-font);
-	font-weight: var(--m-text-weight);
-	font-size: var(--m-text-size);
 
 	&:not(:last-child)::after {
 		content: ',';
