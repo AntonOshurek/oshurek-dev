@@ -3,13 +3,13 @@
 @import './nav/nav-btn';
 @import './banner/banner';
 
-/* post */
-@import './post/blog/blog';
-@import './post/post-preview/post-preview';
-@import './post/post-part/post-part';
-@import './post/post-items/post-items';
-@import './post/post/post';
-@import './post/recent-posts/recent-posts';
+/* article */
+@import './article/articles/articles.scss';
+@import './article/article/article.scss';
+@import './article/recent-articles/recent-articles.scss';
+@import './article/article-preview/article-preview.scss';
+@import './article/article-part/article-part.scss';
+@import './article/article-items/article-items.scss';
 
 /* work */
 @import './work/works/works';

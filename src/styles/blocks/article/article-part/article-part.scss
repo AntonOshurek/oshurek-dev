@@ -1,4 +1,4 @@
-.post-part {
+.article-part {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -6,21 +6,21 @@
 	gap: 10px;
 }
 
-.post-part__title {
+.article-part__title {
 	font-family: var(--basic-font);
 	font-weight: var(--l-title-slim-weight);
 	font-size: var(--l-title-slim-size);
 	color: var(--primary-text);
 }
 
-.post-part__text {
+.article-part__text {
 	font-family: var(--basic-font);
 	font-weight: var(--s-text-weight);
 	font-size: var(--s-text-size);
 	color: var(--dark-white-text);
 }
 
-.post-part__image {
+.article-part__image {
 	width: 100%;
 	height: auto;
 	object-fit: contain;

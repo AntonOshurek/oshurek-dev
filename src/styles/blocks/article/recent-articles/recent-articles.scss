@@ -1,6 +1,6 @@
 @import '../../../variables/variables';
 
-.recent-posts {
+.recent-articles {
 	display: grid;
 	grid-template-areas:
 		'title link'
@@ -12,7 +12,7 @@
 	gap: 20px;
 }
 
-.recent-posts__title {
+.recent-articles__title {
 	align-self: center;
 	grid-area: title;
 	font-family: var(--basic-font);
@@ -21,6 +21,6 @@
 	color: var(--primary-text);
 }
 
-.recent-posts__posts {
+.recent-articles__posts {
 	grid-area: postslist;
 }
