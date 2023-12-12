@@ -1,0 +1,13 @@
+.article-part {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+.article-part__image {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}

@@ -71,7 +71,7 @@
 							<a class="nav-list__link" href="works.html">Works</a>
 						</li>
 						<li class="nav-list__item">
-							<a class="nav-list__link" href="blog.html">Blog</a>
+							<a class="nav-list__link" href="articles.html">Articles</a>
 						</li>
 					</ul>
 				</nav>
@@ -110,7 +110,7 @@
 				<h2 class="banner__title">Hi, I'm Anton.</h2>
 				<p class="banner__info">
 					This is a personal blog where I (infrequently) write about code and other topics of
-					interest to me. I currently work on React Technologies at Meta.
+					interest to me. I currently work on React and LotusScript Technologies at Unicorn Poznań.
 				</p>
 				<img
 					class="banner__avatar"
@@ -121,45 +121,53 @@
 				/>
 			</section>
 
-			<section class="recent-posts container-large">
-				<h2 class="recent-posts__title">Recent posts</h2>
+			<section class="recent-articles container-large">
+				<h2 class="recent-articles__title">Recent posts</h2>
 				<a class="basic-link" href="blog.html">View all</a>
 
-				<div class="post-items post-items--row recent-posts__posts">
-					<article class="post-preview post-preview--recent">
-						<h3 class="post-preview__title">Why we must use a tailwind CSS?</h3>
-						<time class="post-preview__date" datetime="2023-12-18T010:00">18 dec 2023</time>
+				<div class="article-items article-items--row recent-articles__posts">
+					<article class="article-preview">
+						<h3 class="article-preview__title article-preview-card-title">
+							Why we must use a tailwind CSS?
+						</h3>
+						<time class="article-preview__date article-date" datetime="2023-12-18T010:00"
+							>18 dec 2023</time
+						>
 
-						<div class="post-preview__tags">
-							<h4 class="post-preview__tag">tailwind</h4>
-							<h4 class="post-preview__tag">css</h4>
+						<div class="article-preview__tags">
+							<h4 class="article-preview__tag article-tag">tailwind</h4>
+							<h4 class="article-preview__tag article-tag">css</h4>
 						</div>
 
-						<p class="post-preview__overview">
+						<p class="article-preview__overview article-preview-card-paragraph">
 							In main page we can see some title “Rapidly build modern websites without ever leaving
 							your HTML.”. What they mean? We have some problems witch writing CSS in separate .CSS
 							files? Or this “Tailwind CSS is ...
 						</p>
-						<a class="post-preview__link" href="post.html">
+						<a class="article-preview__link" href="article.html">
 							<span class="visually-hidden">open full post</span>
 						</a>
 					</article>
 
-					<article class="post-preview post-preview--recent">
-						<h3 class="post-preview__title">Making a design system from scratch</h3>
-						<time class="post-preview__date" datetime="2016-11-18T09:54">12 feb 2023</time>
+					<article class="article-preview">
+						<h3 class="article-preview__title article-preview-card-title">
+							Making a design system from scratch
+						</h3>
+						<time class="article-preview__date article-date" datetime="2016-11-18T09:54"
+							>12 feb 2023</time
+						>
 
-						<div class="post-preview__tags">
-							<h4 class="post-preview__tag">design</h4>
-							<h4 class="post-preview__tag">patterns</h4>
+						<div class="article-preview__tags">
+							<h4 class="article-preview__tag article-tag">design</h4>
+							<h4 class="article-preview__tag article-tag">patterns</h4>
 						</div>
 
-						<p class="post-preview__overview">
+						<p class="article-preview__overview article-preview-card-paragraph">
 							Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
 							officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
 							amet...
 						</p>
-						<a class="post-preview__link" href="post.html">
+						<a class="article-preview__link" href="article.html">
 							<span class="visually-hidden">open full post</span>
 						</a>
 					</article>
@@ -168,7 +176,7 @@
 
 			<section class="featured-works container-large">
 				<h2 class="featured-works__title">Featured works</h2>
-				<a class="basic-link" href="works.html">View all</a>
+				<a class="featured-works__link basic-link" href="works.html">View all</a>
 
 				<div class="featured-works__items work-items">
 					<article class="work-preview work-preview--bottom-border">

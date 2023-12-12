@@ -1,11 +1,11 @@
-.blog {
+.articles {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-end;
 }
 
-.blog__title {
+.articles__title {
 	padding: 55px 0;
 	width: 100%;
 	font-family: var(--basic-font);
