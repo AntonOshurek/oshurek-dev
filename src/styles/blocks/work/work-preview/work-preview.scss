@@ -10,7 +10,7 @@
 	&--horizontal {
 		grid-template-areas:
 			'img title title'
-			'img date subtitle'
+			'img date tags'
 			'img description description';
 		grid-template-columns: minmax(150px, 250px) min-content 1fr;
 		grid-template-rows: min-content min-content 1fr;
@@ -21,7 +21,7 @@
 			grid-template-areas:
 				'img img'
 				'title title'
-				'date subtitle'
+				'date tags'
 				'description description';
 			grid-template-columns: max-content 1fr;
 			grid-template-rows: min-content min-content min-content 1fr;
@@ -31,7 +31,7 @@
 	&--vertical {
 		grid-template-areas:
 			'title title title'
-			'date subtitle subtitle'
+			'date tags tags'
 			'description description description'
 			'img img img';
 		grid-template-columns: min-content min-content 1fr;
@@ -40,7 +40,7 @@
 		@media (max-width: $mobile-width) {
 			grid-template-areas:
 				'title title'
-				'date subtitle'
+				'date tags'
 				'img img'
 				'description description';
 			grid-template-columns: max-content 1fr;
@@ -57,8 +57,8 @@
 	grid-area: date;
 }
 
-.work-preview__subtitle {
-	grid-area: subtitle;
+.work-preview__tags {
+	grid-area: tags;
 }
 
 .work-preview__description {
