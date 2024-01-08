@@ -1,0 +1,44 @@
+@import '../../variables/variables.scss';
+
+.work-title {
+	font-family: var(--basic-font);
+	font-weight: var(--l-title-slim-weight);
+	font-size: var(--l-title-slim-size);
+	color: var(--primary-text);
+
+	&--big {
+		font-weight: var(--xl-title-weight);
+		font-size: var(--xl-title-size);
+	}
+}
+
+.work-tags {
+	font-family: var(--basic-font);
+	font-weight: var(--m-text-weight);
+	font-size: var(--m-text-size);
+	color: var(--secondary-text);
+}
+
+.work-sub-title {
+	font-family: var(--basic-font);
+	font-weight: var(--l-title-slim-weight);
+	font-size: var(--l-title-slim-size);
+	color: var(--primary-text);
+}
+
+.work-paragraph {
+	font-family: var(--basic-font);
+	font-weight: var(--s-text-weight);
+	font-size: var(--s-text-size);
+	color: var(--primary-text);
+}
+
+.work-date {
+	border-radius: 16px;
+	padding: 0 10px;
+	font-family: var(--basic-font);
+	font-weight: var(--m-text-weight);
+	font-size: var(--m-text-size);
+	color: var(--white-text);
+	background-color: var(--surface);
+}
