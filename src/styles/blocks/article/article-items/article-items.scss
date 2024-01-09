@@ -2,14 +2,29 @@
 
 .article-items {
 	display: grid;
-	grid-template-columns: 1fr;
 	gap: var(--post-items-gap);
+
+	&--column {
+		grid-template-columns: 1fr;
+	}
 
 	&--row {
 		grid-template-columns: 1fr 1fr;
 
 		@media (max-width: $tablet-width) {
 			grid-template-columns: 1fr;
+		}
+	}
+
+	&--underline > .article-preview {
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: calc(-1 * var(--post-items-gap) / 2);
+			width: 100%;
+			height: 2px;
+			background-color: var(--decor-color);
 		}
 	}
 }
