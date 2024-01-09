@@ -1,11 +1,11 @@
-@import '../../variables/variables.scss';
+@import '../../variables/variables';
 
 .article-xl-title {
 	font-family: var(--article-title-font);
 	font-weight: var(--xl-title-weight);
 	font-size: var(--xl-title-size);
-	color: var(--primary-text);
 	line-height: var(--xl-title-line-height);
+	color: var(--primary-text);
 }
 
 .article-l-title {
@@ -48,8 +48,8 @@
 	font-family: var(--basic-font);
 	font-weight: var(--s-text-weight);
 	font-size: var(--s-text-size);
-	color: var(--secondary-text);
 	line-height: var(--s-text-line-height);
+	color: var(--secondary-text);
 }
 
 .article-date {
