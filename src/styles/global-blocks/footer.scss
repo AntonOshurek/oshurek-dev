@@ -39,11 +39,9 @@
 }
 
 .footer__social-icon {
-	& path {
-		fill: var(--primary-text);
-	}
+	color: var(--primary-text);
 
-	&:hover path {
-		fill: var(--hover-item-color);
+	&:hover {
+		color: var(--hover-item-color);
 	}
 }
