@@ -1,15 +1,15 @@
-@import './global/global-styles.scss';
-@import './global/fonts.scss';
-@import './variables/variables.scss';
+@import './global/global-styles';
+@import './global/fonts';
+@import './variables/variables';
 
 /* common */
-@import './common/index.scss';
+@import './common/index';
 
 /* global blocks */
-@import './global-blocks/index.scss';
+@import './global-blocks/index';
 
 /* typography */
-@import './typography/index.scss';
+@import './typography/index';
 
 /* blocks */
-@import './blocks/index.scss';
+@import './blocks/index';
