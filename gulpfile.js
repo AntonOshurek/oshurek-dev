@@ -199,7 +199,7 @@ export const copy = (done) => {
 		[
 			`${paths.srcFontsFolder}/**/*.{woff2,woff}`,
 			`${srcFolder}/*.ico`,
-			`${srcFolder}/manifest.webmanifest`,
+			`${srcFolder}/*.webmanifest`,
 		],
 		{
 			base: srcFolder,
