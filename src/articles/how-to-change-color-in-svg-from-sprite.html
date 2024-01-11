@@ -192,49 +192,60 @@
 						svg sprite file.
 					</p>
 
-					<!-- <pre class="code-block"><code class="code code__css">
-	<span class="code__selector code__number">.author-bio</span> <span class="code__punctuation">{</span>
-		<span class="code__property">background-color:</span> <span class="code__number">white</span><span class="code__punctuation">;</span>
-		<span class="code__property">border:</span> <span class="code__number">1</span>px solid hsl(0,0%,85%)<span class="code__punctuation">;</span>
-		<span class="code__property">border-radius:</span> <span class="code__number">4</span>px<span class="code__punctuation">;</span>
-		<span class="code__property">box-shadow:</span> <span class="code__number">0</span> <span class="code__number">2</span>px <span class="code__number">4</span>px rgba(0,0,0,0.1)<span class="code__punctuation">;</span>
-		<span class="code__property">overflow:</span> <span class="code__number">hidden</span><span class="code__punctuation">;</span>
-	<span class="code__punctuation">}</span>
-
-	<span class="code__selector code__number">.author-bio > img</span> <span class="code__punctuation">{</span>
-		<span class="code__property">display:</span> <span class="code__number">block</span><span class="code__punctuation">;</span>
-		<span class="code__property">width:</span> <span class="code__number">100%</span><span class="code__punctuation">;</span>
-		<span class="code__property">height:</span> <span class="code__number">auto</span><span class="code__punctuation">;</span>
-	<span class="code__punctuation">}</span>
-
-	<span class="code__selector code__number">.author-bio > div</span> <span class="code__punctuation">{</span>
-		<span class="code__property">padding:</span> <span class="code__number">1rem</span><span class="code__punctuation">;</span>
-		<span class="code__selector code__number">> h2</span> <span class="code__punctuation">{</span>
-			<span class="code__property">font-size:</span> <span class="code__number">1.25rem</span><span class="code__punctuation">;</span>
-			<span class="code__property">color:</span> rgba(<span class="code__number">0</span>,<span class="code__number">0</span>,<span class="code__number">0</span>,<span class="code__number">0.8</span>)<span class="code__punctuation">;</span>
-		<span class="code__punctuation">}</span>
-		<span class="code__selector code__number">> p</span> <span class="code__punctuation">{</span>
-			<span class="code__property">font-size:</span> <span class="code__number">1rem</span><span class="code__punctuation">;</span>
-			<span class="code__property">color:</span> rgba(<span class="code__number">0</span>,<span class="code__number">0</span>,<span class="code__number">0</span>,<span class="code__number">0.75</span>)<span class="code__punctuation">;</span>
-			<span class="code__property">line-height:</span> <span class="code__number">1.5</span><span class="code__punctuation">;</span>
-		<span class="code__punctuation">}</span>
-	<span class="code__punctuation">}</span>
-</code></pre> -->
-
 					<p class="article-m-paragraph">
 						That property will give us the opportunity to change color in path. Then, we set a color
 						in svg tag in our html. How we can did it?
 					</p>
+
+					<pre
+						class="code-block"
+						rel="HTML"
+					><code class="code code__html"><span class="tag"><span class="punctuation">&lt</span>svg</span>
+	<span class="attr-name">width</span><span class="attr-value"><span class="punctuation">="</span>40<span class="punctuation">"</span></span>
+	<span class="attr-name">height</span><span class="attr-value"><span class="punctuation">="</span>40<span class="punctuation">"</span></span>
+	<span class="attr-name">class</span><span class="attr-value"><span class="punctuation">="</span>footer__social-icon<span class="punctuation">"</span></span>
+	<span class="attr-name">aria-hidden</span><span class="attr-value"><span class="punctuation">="</span>true<span class="punctuation">"</span></span>
+	<span class="attr-name">focusable</span><span class="attr-value"><span class="punctuation">="</span>false<span class="punctuation">"</span></span>
+<span class="punctuation">&gt</span>
+	<span class="tag"><span class="punctuation">&lt</span>use</span> <span class="attr-name">xlink:href<span class="attr-value"><span class="punctuation">="</span>images/footer-icons-sprite.svg#footer-icon-instagram<span class="punctuation">"</span></span></span><span class="tag"><span class="punctuation">&lt</span>/use<span class="punctuation">&gt</span></span>
+<span class="tag"><span class="punctuation">&lt</span>/svg<span class="punctuation">&gt</span></span>
+						</code>
+					</pre>
+					<!-- <svg
+                width="40"
+                height="40"
+                class="footer__social-icon"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use xlink:href="images/footer-icons-sprite.svg#footer-icon-instagram"></use>
+              </svg> -->
 
 					<p class="article-m-paragraph">
 						As you can see, I set a class “footer__social-icon” fro svg tag. In this class, in css,
 						I set a color.
 					</p>
 
+					<pre
+						class="code-block"
+					><code class="code code__css"><span class="selector">.footer__social-icon </span> <span class="punctuation">{</span>
+		<span class="property">color:</span> <span class="number">var<span class="punctuation">(</span><span class="var">--primary-text</span><span class="punctuation">)</span></span><span class="punctuation">;</span>
+</code></pre>
+
 					<p class="article-m-paragraph">
 						ok, that works. And last problem that I was need to resolve is change the color with
 						hover effect. That’s easy
 					</p>
+
+					<pre
+						class="code-block"
+					><code class="code code__css"><span class="selector">.footer__social-icon </span> <span class="punctuation">{</span>
+		<span class="property">color:</span> <span class="number">var<span class="punctuation">(</span><span class="var">--primary-text</span><span class="punctuation">)</span></span><span class="punctuation">;</span>
+		  <span class="parent">&</span><span class="selector">:hover</span> <span class="punctuation">{</span>
+    		<span class="property">color:</span> <span class="number">var<span class="punctuation">(</span><span class="var">--hover-item-color</span><span class="punctuation">)</span></span><span class="punctuation">;</span>
+   		<span class="punctuation">}</span>
+	<span class="punctuation">}</span>
+</code></pre>
 
 					<p class="article-m-paragraph">
 						This is a final version of code. In this case we can change color and change color with
