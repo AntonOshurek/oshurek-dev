@@ -1,9 +1,9 @@
 .code {
-	overflow: auto;
+	display: block;
 	margin: 0;
 	padding: 0;
-	min-width: 100%;
-	position: relative;
+	width: 100%;
+	overflow: auto;
 }
 
 .code__css {
@@ -36,7 +36,7 @@
 	&::after {
 		content: 'CSS';
 		position: absolute;
-		top: 0;
+		top: 5px;
 		right: 5px;
 		font-style: normal;
 		font-weight: 700;
@@ -67,7 +67,7 @@
 		font-size: 10px;
 		content: 'HTML';
 		position: absolute;
-		top: 0;
+		top: 5px;
 		right: 5px;
 		color: #f5d67b;
 	}
