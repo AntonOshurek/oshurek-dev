@@ -121,13 +121,17 @@
 						icons in separate file. But here, we will have some problem, we can’t dymanicly change a
 						color on this svg that is in svg sprite.
 					</p>
-					<img
-						class="article-preview__image"
-						src="https://img-c.udemycdn.com/course/750x422/2544755_31d0_2.jpg"
-						alt=""
-						width="600"
-						height="400"
-					/>
+
+					<picture class="article-preview__image">
+						<source srcset="../images/articles-images/svg-sprite-banner.webp" type="image/webp" />
+						<img
+							class="article-preview__image"
+							width="600"
+							height="400"
+							src="../images/articles-images/svg-sprite-banner.jpg"
+							alt="rondo przed wejściem głównym do dworca"
+						/>
+					</picture>
 				</section>
 
 				<section class="article-part">
@@ -140,7 +144,10 @@
 						That file must looks like this
 					</p>
 
-					<pre class="code-block" rel="HTML"><code class="code code__html"><span class="tag"><span class="punctuation">&lt</span>svg</span> <span class="attr-name">xmlns<span class="attr-value"><span class="punctuation">="</span>http://www.w3.org/2000/svg<span class="punctuation">"</span></span></span>
+					<pre
+						class="code-block"
+						rel="HTML"
+					><code class="code code__html"><span class="tag"><span class="punctuation">&lt</span>svg</span> <span class="attr-name">xmlns<span class="attr-value"><span class="punctuation">="</span>http://www.w3.org/2000/svg<span class="punctuation">"</span></span></span>
 	<span class="tag"><span class="punctuation">&lt</span>symbol</span> <span class="attr-name">viewBox</span><span class="attr-value"><span class="punctuation">="</span>0 0 96 96<span class="punctuation">"</span></span> <span class="attr-name">id</span><span class="attr-value"><span class="punctuation">="</span>footer-icon-instagram<span class="punctuation">"</span></span><span class="punctuation">&gt</span>
 		<span class="tag"><span class="punctuation">&lt</span>path</span>
 			<span class="attr-name">fill<span class="attr-value"><span class="punctuation">="</span>currentColor<span class="punctuation">"</span></span></span>
@@ -162,7 +169,7 @@
 		<span class="punctuation">/&gt</span><span class="tag">
 		<span class="punctuation">&lt</span>/path<span class="punctuation">&gt</span></span>
 	<span class="tag"><span class="punctuation">&lt</span>/symbol<span class="punctuation">&gt</span></span>
-<span class="tag"><span class="punctuation">&lt/</span>svg</span><span class="punctuation">&gt</span></span></code></pre>
+<span class="tag"><span class="punctuation">&lt/</span>svg</span><span class="punctuation">&gt</span></code></pre>
 
 					<p class="article-m-paragraph">
 						Before, we can use this icons in our html code in this way;
