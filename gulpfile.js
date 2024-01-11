@@ -233,7 +233,7 @@ const reloadServer = (done) => {
 
 const watchFiles = () => {
 	watch([`${srcFolder}/styles/**/*.scss`], series(styles));
-	watch(`${srcFolder}/*.html`, series(html, reloadServer));
+	watch(`${srcFolder}/**/*.html`, series(html, reloadServer));
 	watch(`${srcFolder}/scripts/**/*.js`, series(scripts));
 	watch(`${srcFolder}/light.scss`, series(copyLightThemeStyles));
 	watch(`${srcFolder}/dark.scss`, series(copyDarkThemeStyles));
