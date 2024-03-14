@@ -1,294 +1,223 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<title>Oshurek Dev</title>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link rel="icon" href="favicon.ico" />
-		<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/16x16.png" />
-		<link rel="manifest" href="/manifest.webmanifest" />
+	<title>Oshurek Dev</title>
 
-		<meta name="color-scheme" content="light dark" />
-		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#c7cbcc" />
-		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#273a43" />
+	<link rel="icon" href="favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/16x16.png" />
+	<link rel="manifest" href="/manifest.webmanifest" />
 
-		<script>
-			if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-				document.documentElement.style.display = 'none';
-				document.head.insertAdjacentHTML(
-					'beforeend',
-					'<link rel="stylesheet" href="light.css" onload="document.documentElement.style.display=\'\'">',
-				);
-			}
-		</script>
+	<meta name="color-scheme" content="light dark" />
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#c7cbcc" />
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#273a43" />
 
-		<link rel="stylesheet" href="styles/style.min.css" />
-		<!--dark and light theme styles-->
-		<link rel="stylesheet" href="./light.css" media="(prefers-color-scheme: light)" />
-		<link rel="stylesheet" href="./dark.css" media="(prefers-color-scheme: dark)" />
-	</head>
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="light.css" onload="document.documentElement.style.display=\'\'">',
+			);
+		}
+	</script>
 
-	<body class="body">
-		<header class="header">
-			<h1 class="visually-hidden">Anton Oshurek personal blog page</h1>
-			<div class="header__wrap container">
-				<button class="nav-button" type="button">
-					<span class="visually-hidden">open/close mobile navigation menu</span>
-					<svg
-						class="nav-button__burger"
-						aria-hidden="true"
-						focusable="false"
-						viewBox="0 0 100 100"
-						width="80"
-					>
-						<path
-							class="nav-button__burger-line nav-button__burger-line--top"
-							d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013"
-						/>
-						<path
-							class="nav-button__burger-line nav-button__burger-line--middle"
-							d="m 70,50 h -40"
-						/>
-						<path
-							class="nav-button__burger-line nav-button__burger-line--bottom"
-							d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40"
-						/>
-					</svg>
-				</button>
+	<link rel="stylesheet" href="styles/style.min.css" />
+	<!--dark and light theme styles-->
+	<link rel="stylesheet" href="./light.css" media="(prefers-color-scheme: light)" />
+	<link rel="stylesheet" href="./dark.css" media="(prefers-color-scheme: dark)" />
+</head>
 
-				<nav class="nav">
-					<h2 class="visually-hidden">Page navigation</h2>
-					<ul class="nav-list">
-						<li class="nav-list__item">
-							<a class="nav-list__link nav-list__link--active" href="index.html">Home</a>
-						</li>
-						<li class="nav-list__item">
-							<a class="nav-list__link" href="works.html">Works</a>
-						</li>
-						<li class="nav-list__item">
-							<a class="nav-list__link" href="articles.html">Articles</a>
-						</li>
-					</ul>
-				</nav>
+<body class="body">
+	<header class="header">
+		<h1 class="visually-hidden">Anton Oshurek personal blog page</h1>
+		<div class="header__wrap container">
+			<button class="nav-button" type="button">
+				<span class="visually-hidden">open/close mobile navigation menu</span>
 
-				<fieldset class="theme-switcher">
-					<legend class="visually-hidden">Цветовая тема</legend>
-					<input
-						class="theme-switcher__radio theme-switcher__radio--light"
-						type="radio"
-						name="color-scheme"
-						value="light"
-						aria-label="light color theme"
-					/>
-					<input
-						class="theme-switcher__radio theme-switcher__radio--auto"
-						type="radio"
-						name="color-scheme"
-						value="auto"
-						aria-label="auto color theme"
-						checked
-					/>
-					<input
-						class="theme-switcher__radio theme-switcher__radio--dark"
-						type="radio"
-						name="color-scheme"
-						value="dark"
-						aria-label="dark color theme"
-					/>
-					<div class="theme-switcher__status" aria-hidden="true" focusable="false"></div>
-				</fieldset>
-			</div>
-		</header>
+				<svg class="nav-button__burger" aria-hidden="true" focusable="false" viewBox="0 0 100 100" width="60"
+					height="60">
+					<path class="nav-button__burger-line nav-button__burger-line--top"
+						d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+					<path class="nav-button__burger-line nav-button__burger-line--middle" d="m 70,50 h -40" />
+					<path class="nav-button__burger-line nav-button__burger-line--bottom"
+						d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+				</svg>
 
-		<main class="main">
-			<section class="banner container-large">
-				<h2 class="banner__title">Hi, I'm Anton.</h2>
-				<p class="banner__info">
-					This is a personal blog where I (infrequently) write about code and other topics of
-					interest to me. I currently work on React and LotusScript Technologies at Unicorn Poznań.
-				</p>
-				<img
-					class="banner__avatar"
-					src="./images/banner-avatar.jpg"
-					alt=""
-					width="300"
-					height="300"
-				/>
-			</section>
+			</button>
 
-			<section class="recent-articles container-large">
-				<h2 class="recent-articles__title">Recent posts</h2>
-				<a class="basic-link" href="blog.html">View all</a>
-
-				<div class="article-items article-items--row recent-articles__posts">
-					<article class="article-preview">
-						<h3 class="article-preview__title article-l-title">Why we must use a tailwind CSS?</h3>
-						<time class="article-preview__date article-date" datetime="2023-12-18T010:00"
-							>18 dec 2023</time
-						>
-
-						<div class="article-preview__tags">
-							<h4 class="article-preview__tag article-tag">tailwind</h4>
-							<h4 class="article-preview__tag article-tag">css</h4>
-						</div>
-
-						<p class="article-preview__overview article-l-paragraph">
-							In main page we can see some title “Rapidly build modern websites without ever leaving
-							your HTML.”. What they mean? We have some problems witch writing CSS in separate .CSS
-							files? Or this “Tailwind CSS is ...
-						</p>
-						<a class="article-preview__link" href="article.html">
-							<span class="visually-hidden">open full post</span>
-						</a>
-					</article>
-
-					<article class="article-preview">
-						<h3 class="article-preview__title article-l-title">
-							How you can change svg color when use a svg sprite?
-						</h3>
-						<time class="article-preview__date article-date" datetime="2024-01-11T010:00"
-							>11 jan 2024</time
-						>
-
-						<div class="article-preview__tags">
-							<h4 class="article-preview__tag article-tag">svg</h4>
-							<h4 class="article-preview__tag article-tag">color</h4>
-							<h4 class="article-preview__tag article-tag">css</h4>
-						</div>
-
-						<p class="article-preview__overview article-l-paragraph">
-							Some times, we need to create svg sprite for optimize our html markup and keep all of
-							icons in separate file. But here, we will have some problem, we can’t dymanicly change
-							a color on this svg that is in svg sprite.
-						</p>
-						<a
-							class="article-preview__link"
-							href="./articles/how-to-change-color-in-svg-from-sprite.html"
-						>
-							<span class="visually-hidden">open full post</span>
-						</a>
-					</article>
-				</div>
-			</section>
-
-			<section class="featured-works container-large">
-				<h2 class="featured-works__title">Featured works</h2>
-				<a class="featured-works__link basic-link" href="works.html">View all</a>
-
-				<div class="featured-works__items work-items">
-					<article class="work-preview work-preview--horizontal">
-						<h3 class="work-preview__title work-title">Designing Dashboards</h3>
-						<time class="work-preview__date work-date" datetime="2016-11-18T09:54">2022</time>
-						<h4 class="work-preview__tags work-tags">Dashboard</h4>
-						<p class="work-preview__description work-paragraph">
-							Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-							officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-							amet.
-						</p>
-						<img
-							class="work-preview__image"
-							src="https://previews.123rf.com/images/epicfail/epicfail1702/epicfail170200239/72740134-thin-line-design-concept-for-project-website-banner.jpg"
-							alt=""
-							width="246"
-							height="180"
-						/>
-						<a class="work-preview__link" href="work.html">
-							<span class="visually-hidden">open full work description</span>
-						</a>
-					</article>
-					<article class="work-preview work-preview--horizontal">
-						<h3 class="work-preview__title work-title">Designing Dashboards</h3>
-						<time class="work-preview__date work-date" datetime="2016-11-18T09:54">2022</time>
-						<h4 class="work-preview__tags work-tags">Dashboard</h4>
-						<p class="work-preview__description work-paragraph">
-							Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-							officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
-							amet.
-						</p>
-						<img
-							class="work-preview__image"
-							src="https://previews.123rf.com/images/epicfail/epicfail1702/epicfail170200239/72740134-thin-line-design-concept-for-project-website-banner.jpg"
-							alt=""
-							width="246"
-							height="180"
-						/>
-						<a class="work-preview__link" href="work.html">
-							<span class="visually-hidden">open full work description</span>
-						</a>
-					</article>
-				</div>
-			</section>
-		</main>
-
-		<footer class="footer">
-			<div class="footer__wrap container-medium">
-				<h3 class="visually-hidden">Links to Anton's social media</h3>
-
-				<ul class="footer__social-list">
-					<li class="footer__social-item">
-						<a
-							class="footer__social-link"
-							href="https://www.linkedin.com/in/anton-oshurek-a6232521a/"
-							target="_blank"
-						>
-							<span class="visually-hidden">LinkedIn</span>
-
-							<svg
-								width="40"
-								height="40"
-								class="footer__social-icon"
-								aria-hidden="true"
-								focusable="false"
-							>
-								<use xlink:href="images/footer-icons-sprite.svg#footer-icon-linkedin"></use>
-							</svg>
-						</a>
+			<nav class="nav">
+				<h2 class="visually-hidden">Page navigation</h2>
+				<ul class="nav-list">
+					<li class="nav-list__item">
+						<a class="nav-list__link nav-list__link--active" href="index.html">Home</a>
 					</li>
-					<li class="footer__social-item">
-						<a class="footer__social-link" href="https://github.com/AntonOshurek" target="_blank">
-							<span class="visually-hidden">GitHub</span>
-
-							<svg
-								width="40"
-								height="40"
-								class="footer__social-icon"
-								aria-hidden="true"
-								focusable="false"
-							>
-								<use xlink:href="images/footer-icons-sprite.svg#footer-icon-github"></use>
-							</svg>
-						</a>
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="works.html">Works</a>
 					</li>
-					<li class="footer__social-item">
-						<a
-							class="footer__social-link"
-							href="https://www.instagram.com/oshurekweb/"
-							target="_blank"
-						>
-							<span class="visually-hidden">instagram</span>
-
-							<svg
-								width="40"
-								height="40"
-								class="footer__social-icon"
-								aria-hidden="true"
-								focusable="false"
-							>
-								<use xlink:href="images/footer-icons-sprite.svg#footer-icon-instagram"></use>
-							</svg>
-						</a>
+					<li class="nav-list__item">
+						<a class="nav-list__link" href="articles.html">Articles</a>
 					</li>
 				</ul>
+			</nav>
 
-				<p class="footer__copyright">©2024</p>
+			<fieldset class="theme-switcher">
+				<legend class="visually-hidden">Цветовая тема</legend>
+				<input class="theme-switcher__radio theme-switcher__radio--light" type="radio" name="color-scheme" value="light"
+					aria-label="light color theme" />
+				<input class="theme-switcher__radio theme-switcher__radio--auto" type="radio" name="color-scheme" value="auto"
+					aria-label="auto color theme" checked />
+				<input class="theme-switcher__radio theme-switcher__radio--dark" type="radio" name="color-scheme" value="dark"
+					aria-label="dark color theme" />
+				<div class="theme-switcher__status" aria-hidden="true" focusable="false"></div>
+			</fieldset>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="banner container-large">
+			<h2 class="banner__title">Hi, I'm Anton.</h2>
+			<p class="banner__info">
+				This is a personal blog where I (infrequently) write about code and other topics of
+				interest to me. I currently work on React and LotusScript Technologies at Unicorn Poznań.
+			</p>
+			<img class="banner__avatar" src="./images/banner-avatar.jpg" alt="" width="300" height="300" />
+		</section>
+
+		<section class="recent-articles container-large">
+			<h2 class="recent-articles__title">Recent posts</h2>
+			<a class="basic-link" href="blog.html">View all</a>
+
+			<div class="article-items article-items--row recent-articles__posts">
+				<article class="article-preview">
+					<h3 class="article-preview__title article-l-title">Why we must use a tailwind CSS?</h3>
+					<time class="article-preview__date article-date" datetime="2023-12-18T010:00">18 dec 2023</time>
+
+					<div class="article-preview__tags">
+						<h4 class="article-preview__tag article-tag">tailwind</h4>
+						<h4 class="article-preview__tag article-tag">css</h4>
+					</div>
+
+					<p class="article-preview__overview article-l-paragraph">
+						In main page we can see some title “Rapidly build modern websites without ever leaving
+						your HTML.”. What they mean? We have some problems witch writing CSS in separate .CSS
+						files? Or this “Tailwind CSS is ...
+					</p>
+					<a class="article-preview__link" href="article.html">
+						<span class="visually-hidden">open full post</span>
+					</a>
+				</article>
+
+				<article class="article-preview">
+					<h3 class="article-preview__title article-l-title">
+						How you can change svg color when use a svg sprite?
+					</h3>
+					<time class="article-preview__date article-date" datetime="2024-01-11T010:00">11 jan 2024</time>
+
+					<div class="article-preview__tags">
+						<h4 class="article-preview__tag article-tag">svg</h4>
+						<h4 class="article-preview__tag article-tag">color</h4>
+						<h4 class="article-preview__tag article-tag">css</h4>
+					</div>
+
+					<p class="article-preview__overview article-l-paragraph">
+						Some times, we need to create svg sprite for optimize our html markup and keep all of
+						icons in separate file. But here, we will have some problem, we can’t dymanicly change
+						a color on this svg that is in svg sprite.
+					</p>
+					<a class="article-preview__link" href="./articles/how-to-change-color-in-svg-from-sprite.html">
+						<span class="visually-hidden">open full post</span>
+					</a>
+				</article>
 			</div>
-		</footer>
+		</section>
 
-		<script src="./scripts/bundle.js"></script>
-	</body>
+		<section class="featured-works container-large">
+			<h2 class="featured-works__title">Featured works</h2>
+			<a class="featured-works__link basic-link" href="works.html">View all</a>
+
+			<div class="featured-works__items work-items">
+				<article class="work-preview work-preview--horizontal">
+					<h3 class="work-preview__title work-title">Designing Dashboards</h3>
+					<time class="work-preview__date work-date" datetime="2016-11-18T09:54">2022</time>
+					<h4 class="work-preview__tags work-tags">Dashboard</h4>
+					<p class="work-preview__description work-paragraph">
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+						officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+						amet.
+					</p>
+					<img class="work-preview__image"
+						src="https://previews.123rf.com/images/epicfail/epicfail1702/epicfail170200239/72740134-thin-line-design-concept-for-project-website-banner.jpg"
+						alt="" width="246" height="180" />
+					<a class="work-preview__link" href="work.html">
+						<span class="visually-hidden">open full work description</span>
+					</a>
+				</article>
+				<article class="work-preview work-preview--horizontal">
+					<h3 class="work-preview__title work-title">Designing Dashboards</h3>
+					<time class="work-preview__date work-date" datetime="2016-11-18T09:54">2022</time>
+					<h4 class="work-preview__tags work-tags">Dashboard</h4>
+					<p class="work-preview__description work-paragraph">
+						Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+						officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+						amet.
+					</p>
+					<img class="work-preview__image"
+						src="https://previews.123rf.com/images/epicfail/epicfail1702/epicfail170200239/72740134-thin-line-design-concept-for-project-website-banner.jpg"
+						alt="" width="246" height="180" />
+					<a class="work-preview__link" href="work.html">
+						<span class="visually-hidden">open full work description</span>
+					</a>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__wrap container-medium">
+			<h3 class="visually-hidden">Links to Anton's social media</h3>
+
+			<ul class="footer__social-list">
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="https://www.linkedin.com/in/anton-oshurek-a6232521a/" target="_blank">
+						<span class="visually-hidden">LinkedIn</span>
+
+						<svg width="40" height="40" class="footer__social-icon" aria-hidden="true" focusable="false">
+							<use xlink:href="images/footer-icons-sprite.svg#footer-icon-linkedin"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="https://github.com/AntonOshurek" target="_blank">
+						<span class="visually-hidden">GitHub</span>
+
+						<svg width="40" height="40" class="footer__social-icon" aria-hidden="true" focusable="false">
+							<use xlink:href="images/footer-icons-sprite.svg#footer-icon-github"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="footer__social-item">
+					<a class="footer__social-link" href="https://www.instagram.com/oshurekweb/" target="_blank">
+						<span class="visually-hidden">instagram</span>
+
+						<svg width="40" height="40" class="footer__social-icon" aria-hidden="true" focusable="false">
+							<use xlink:href="images/footer-icons-sprite.svg#footer-icon-instagram"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+
+			<p class="footer__copyright">©2024</p>
+		</div>
+	</footer>
+
+	<script src="./scripts/bundle.js"></script>
+</body>
+
 </html>

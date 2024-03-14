@@ -79,4 +79,8 @@
 	height: 300px;
 	box-shadow: var(--shadow);
 	object-fit: cover;
+
+	@media (max-width: $mobile-width) {
+		object-fit: contain;
+	}
 }
