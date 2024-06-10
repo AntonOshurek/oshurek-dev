@@ -1,6 +1,6 @@
 {
 	"git.openRepositoryInParentFolders": "never",
-	"workbench.colorTheme": "Tokyo Night",
+	// "workbench.colorTheme": "Tokyo Night",
 	"workbench.iconTheme": "material-icon-theme",
 	"editor.fontSize": 15,
 	"debug.console.fontSize": 15,
@@ -52,5 +52,5 @@
 	"javascript.updateImportsOnFileMove.enabled": "never",
 	"workbench.preferredHighContrastLightColorTheme": "Default Light Modern",
 	"github.copilot.editor.enableAutoCompletions": true,
-	// "workbench.colorTheme": "Default Light+",
+	"workbench.colorTheme": "Default Light+",
 }
