@@ -1,27 +1,26 @@
 :root {
 	/* BG and Overlays */
-	--bg: #0e0e0e;
-	--second-bg: #0b0f15;
+	--bg: #0E0E0E;
+	--second-bg: #0B0F15;
 	--overlay: #151627;
 	--surface: #142850;
-	--open-nav-overlay: rgba(0, 0, 0, 0.6);
-
-	--code-bg: #1b1b1b;
+	--open-nav-overlay: rgb(0 0 0 / 60%);
+	--code-bg: #1B1B1B;
 
 	/* Text colors */
-	--primary-text: #f7f7f7;
-	--secondary-text: #8695a4;
-	--white-text: #ffffff;
+	--primary-text: #F7F7F7;
+	--secondary-text: #8695A4;
+	--white-text: #FFFFFF;
 	--dark-text: #000000;
-	--link-text: #00a8cc;
+	--link-text: #00A8CC;
 
 	/* Other */
 	--decor-color: #313030;
 
 	/* main */
-	--primary: #03dac6;
-	--secondary: #6200ee;
-	--attention: #ff6464;
+	--primary: #03DAC6;
+	--secondary: #6200EE;
+	--attention: #FF6464;
 
 	/* items */
 	--navigation-link-color: var(--white-text);
@@ -30,7 +29,6 @@
 	--important-item-color: var(--attention);
 	--hover-item-color: var(--primary);
 	--current-item-color: var(--attention);
-
 	--shadow: 0.3rem 0.3rem 0.8rem rgb(0 0 0 / 51%), -0.3rem -0.3rem 0.8rem rgb(255 255 255 / 5%);
 	--inner-shadow: inset 0.2rem 0.2rem 0.5rem rgb(0 0 0 / 51%),
 		inset -0.2rem -0.2rem 0.5rem rgb(255 255 255 / 5%);
