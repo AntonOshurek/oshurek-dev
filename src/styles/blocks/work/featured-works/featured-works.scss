@@ -4,7 +4,7 @@
 	display: grid;
 	grid-template-areas:
 		'title link'
-		'worksList worksList';
+		'worksItems worksItems';
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: min-content 1fr;
 	padding: 30px 0;
@@ -19,10 +19,15 @@
 	font-weight: var(--s-title-weight);
 	font-size: var(--s-title-size);
 	color: var(--primary-text);
+
+	@media (max-width: $mobile-width) {
+		font-weight: var(--xs-title-weight);
+		font-size: var(--xs-title-size);
+	}
 }
 
 .featured-works__items {
-	grid-area: worksList;
+	grid-area: worksItems;
 }
 
 .featured-works__link {

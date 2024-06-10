@@ -9,13 +9,19 @@
 		"ecmaVersion": 2021,
 		"sourceType": "module"
 	},
-	"extends": ["eslint:recommended", "plugin:prettier/recommended"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:prettier/recommended"
+	],
 	"rules": {
 		"semi": "off",
 		"no-console": "warn",
 		"no-unused-vars": "error",
 		"prefer-const": "warn",
 		"no-var": "error",
-		"strict": ["error", "global"]
+		"strict": [
+			"error",
+			"global"
+		]
 	}
 }

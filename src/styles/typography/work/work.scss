@@ -9,6 +9,16 @@
 	&--big {
 		font-weight: var(--xl-title-weight);
 		font-size: var(--xl-title-size);
+
+		@media (max-width: $mobile-width) {
+			font-weight: var(--l-title-weight);
+			font-size: var(--l-title-size);
+		}
+	}
+
+	@media (max-width: $mobile-width) {
+		font-weight: var(--m-title-weight);
+		font-size: var(--m-title-size);
 	}
 }
 
