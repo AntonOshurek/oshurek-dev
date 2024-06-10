@@ -19,6 +19,11 @@
 	font-weight: var(--s-title-weight);
 	font-size: var(--s-title-size);
 	color: var(--primary-text);
+
+	@media (max-width: $mobile-width) {
+		font-weight: var(--xs-title-weight);
+		font-size: var(--xs-title-size);
+	}
 }
 
 .recent-articles__articles-list {
